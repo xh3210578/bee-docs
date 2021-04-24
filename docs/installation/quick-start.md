@@ -6,9 +6,112 @@ id: quick-start
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+
+
+### Bee Modes
+
+Bee is a versatile piece of software that caters for a diverse array of use cases.
+
+## Single Installation
+
+### Proxy Node
+
+If you want to interact with the Bee ecosystem in a decentralised way, but not earn gBZZ by storing or forwarding chunks, simply run Bee in the background on your computer for direct access.
+
+### Full Node
+
+Earn gBZZ and help keep the swarm strong by running your own node. It's easy to set up your own Bee on your Raspberry Pi, cloud host or any home computer that's connected to the internet.
+
+--> single
+
+## Multiple Installations
+
+### Hive of Nodes
+
+Take it to the next level by running a whole hive of Bees. We provide tooling and monitoring for to help you manage large deployments of many Bee nodes.
+
+--> multiple
+
+## Swarm Gateways
+
+### Gateway Node
+
+Contribute to the decentralisation of the swarm by creating your own Swarm Gateway so that users who aren't running Bee can connect to the swarm. 
+
+--> gateways
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Bee is packaged for MacOS and Ubuntu, Raspbian, Debian and CentOS based Linux distributions.
 
 If your system is not supported, please see the [manual installation](/docs/installation/manual) section for information on how to install Bee.
+
+:::info
+If you would like to run a hive of many Bees, checkout the [node hive operators](/docs/advanced/node-hive-operators) for section for information on how to operate and monitor many Bees at once.
+:::
+
+## Installing Bee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 The overview of the installation process:
  1. (Recommended) set up an external signer for Bee (i.e. install *bee-clef*)

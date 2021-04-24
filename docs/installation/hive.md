@@ -1,6 +1,40 @@
 ---
-title: Large node operators
-id: large-node-operators
+title: Hive
+id: multi-node
+---
+
+info - we recommend that you go through a single installation first to get a flavour of bee
+
+Because of how the swarm is structured, users wishing to scale up their operation, or set up a commercial Bee hive will need to run many instances of Bee simulataneously...
+
+Doing
+
+	- bare metal
+	- docker
+	- docker compose
+	- kubernetes and beyond
+
+Monitoring
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+title: Node Hive Operators
+id: node-hive-operators
 ---
 
 This page gives some pointers for everybody who wishes to contribute a lot of storage space to Swarm. 

@@ -3,6 +3,13 @@ title: Upload and Download Files
 id: upload-and-download
 ---
 
+Swarm provides a wide variety of tools to upload and download content from the nework....
+
+
+rewrite use
+
+
+
 Bee provides a convenient way of uploading your data into the Swarm. Once your data has been uploaded, it will be distributed and stored by a worldwide network of p2p nodes, and made available from Swarm's [web gateways](https://gateway.ethswarm.org).
 
 ### Quick Upload
@@ -49,6 +56,10 @@ If you are uploading a large file it is useful to track the status of your uploa
 
 Once your file has been **completely synced with the network**, you will be able to turn off your computer and other nodes will take over to serve the data for you!
 :::
+
+### Upload With Pinning
+
+
 
 ## Download
 

@@ -3,6 +3,8 @@ title: Host Your Website on Swarm
 id: host-your-website-using-ens
 ---
 
+ENCRYPT ENCRYPT ENCRYPT
+
 Bee treats ENS as a first class citizen, wherever you can use a Swarm reference, you can also use an ENS domain where the `content` ENS Resolver record is set to be a `bzz://` reference.
 
 :::info

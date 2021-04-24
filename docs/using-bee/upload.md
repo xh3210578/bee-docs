@@ -3,6 +3,14 @@ title: Upload a Directory
 id: upload-a-directory
 ---
 
+
+
+
+
+
+
+
+
 It is possible to use Bee to upload whole directory structures at once. 
 
 :::info

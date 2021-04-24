@@ -3,6 +3,11 @@ title: Persistence
 id: persistence
 ---
 
+Rewrite to explain postage stamps
+
+
+
+
 Each Bee node is configured to reserve a certain amount of memory on your computer's hard drive to store and serve chunks within their *neighbourhood of responsibility* for other nodes in the Swarm network. Once this alloted space has been filled, each Bee node delete older chunks to make way for newer ones as they are uploaded by the network.
 
 Each time a chunk is accessed, it is moved back to the end of the deletion queue, so that regularly accessed content stays alive in the network and is not deleted by a node's garbage collection routine.

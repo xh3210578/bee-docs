@@ -11,11 +11,11 @@ As soon as your Bee client is up and running you will begin to connect with peer
 Swarm is a decentralised data storage and distribution technology, ready to power the next generation of censorship resistant unstoppable serverless apps. It is the complement to blockchain based smart contracts originally envisaged by the Ethereum cryptocurrency and provides the mass storage piece in the Dapp building puzzle. Swarm is the hard drive of the world computer.
 
 ## Installation
-Don't have Bee installed yet? It's easy! Head over to the [installation](/docs/installation/quick-start) section to get Bee up and running on your computer.
+Don't have Bee installed yet? It's easy! Head over to the [installation](/docs/installation/quick-start) section to get Bee up and running.
 
 ## Usage
 To learn more about how to get the most out of Bee, head over to the [tutorials](/docs/getting-started/upload-and-download) section to find out how to share files with your friends, use Bee to host a website on a public Swarm Gateway, and much more...
-
+	
 ## Dapps
 Swarm is all about Dapps. We provide the most developer friendly environment to build Dapps on. Built on principles of functionality, flexibility and accessibility, Bee provides high level constructs for file storage, feeds and key-value stores, while also providing the low level access to other applications and libraries that create Single Owner and Trojan chunks clientside, with total e2e privacy.
 
@@ -23,7 +23,6 @@ Swarm is all about Dapps. We provide the most developer friendly environment to 
 Need even more incentive to get involved with the wonderful world of Swarm? Find out how you'll soon be earning BZZ tokens for storing and distributing your share of the worlds data, sharing is caring!
 
 ## Find Out More
-
 What happens with your Bee node when you start it up? Want to know more about the amazing Swarm technology behind Bee?
 Want to make your own client? Read [The Book of Swarm](https://gateway.ethswarm.org/bzz/latest.bookofswarm.eth/),
 our 250 page epic guide to the future tech underpinning the Swarm network.
