@@ -3,6 +3,16 @@ title: Working With Your Node
 id: working-with-your-node
 ---
 
+- grafana
+- bee-dashboard
+
+
+- is my node healthy
+- what's happening
+- cashing out
+- maintenance
+- tools
+
 Now that you have created your Swarm wallet and your Bee node has begun to participate in the global swarm network, we can use the Debug API to take a closer look at what's happening with your node.
 
 ### Debug API

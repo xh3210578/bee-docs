@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Welcome to the Swarm',
   url: 'https://docs.ethswarm.org',
   // note! we use SED to change this during automated builds, see ./.github/workflows/gh-pages.yml
-  baseUrl: '/bzz/eba7925a4d82c33affaf95fbf3885096487ceb27d8c9f1601f73db4f8ec7624a/',
+  baseUrl: '/',
   plugins: [require.resolve('docusaurus-lunr-search')],
   onBrokenLinks: 'error',
   onBrokenMarkdownLinks: 'error',

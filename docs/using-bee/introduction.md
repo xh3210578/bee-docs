@@ -1,0 +1,5 @@
+- what is swarm for?
+- send files and host content
+- host your website on ENS
+- 
+- 
