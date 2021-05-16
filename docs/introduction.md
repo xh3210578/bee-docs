@@ -4,19 +4,19 @@ title: Welcome!
 slug: /
 ---
 
-https://hackmd.io/mgEgl8GcRMGZedJjI3jDDA
-
 Hello and welcome to the swarm! We are very happy to have you here with us! 🐝 
 
 As soon as your Bee client is up and running you will begin to connect with peers all over the world to become a part of Swarm, a global p2p network tasked with storing and distributing all of the world's data.
 
-Swarm is a decentralised data storage and distribution technology, ready to power the next generation of censorship resistant unstoppable serverless apps. It is the complement to blockchain based smart contracts originally envisaged by the Ethereum cryptocurrency and provides the mass storage piece in the Dapp building puzzle. Swarm is the hard drive of the world computer.
+Swarm is a decentralised data storage and distribution technology, ready to power the next generation of censorship resistant unstoppable serverless apps. It is the complement to blockchain based smart contracts originally envisaged by the Ethereum cryptocurrency and provides the mass storage piece in the Dapp building puzzle. Swarm is economically self-sustaining due to a built-in incentive system enforced through smart contracts on the Ethereum blockchain.
+
+Swarm aspires to shape the future towards a self-sovereign global society and permissionless open markets. On Swarm, applications can run autonomously yet securely in a planetary-scale deployment and execution environment.
 
 ## Installation
 Don't have Bee installed yet? It's easy! Head over to the [installation](/docs/installation/quick-start) section to get Bee up and running.
 
 ## Usage
-To learn more about how to get the most out of Bee, head over to the [tutorials](/docs/getting-started/upload-and-download) section to find out how to share files with your friends, use Bee to host a website on a public Swarm Gateway, and much more...
+To learn more about how to get the most out of Bee, head over to the [working with Bee](/docs/getting-started/upload-and-download) section to find out how to share files with your friends, use Bee to host a website on a public Swarm Gateway, and much more...
 	
 ## Dapps
 Swarm is all about Dapps. We provide the most developer friendly environment to build Dapps on. Built on principles of functionality, flexibility and accessibility, Bee provides high level constructs for file storage, feeds and key-value stores, while also providing the low level access to other applications and libraries that create Single Owner and Trojan chunks clientside, with total e2e privacy. Learn more about how to [develop on Swarm](/docs/develop-on-swarm/introduction)

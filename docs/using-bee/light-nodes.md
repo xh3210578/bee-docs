@@ -4,7 +4,7 @@ id: light-nodes
 ---
 
 :::danger
-When requesting content from a light node, if the requesting node will not benefit from plausible deniability when sending or requesting specific chunks. See [below]() for more details.
+When requesting content from a light node, if the requesting node will not benefit from plausible deniability when sending or requesting specific chunks.
 :::
 
 #### Configuration

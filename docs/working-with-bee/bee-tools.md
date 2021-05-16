@@ -1,6 +1,6 @@
 ---
 title: Bee Dashboard and Swarm CLI
-id: bee-dashboard
+id: bee-tools
 ---
 
 ### Bee Dashboard

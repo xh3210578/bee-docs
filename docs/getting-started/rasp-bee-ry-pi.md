@@ -194,7 +194,7 @@ systemctl restart bee
 
 To restart the Bee process. You should see some activity in the logs as Bee shuts down and restarts.
 
-Now we need to specify some Bee configuration. In order to access the blockchain, your Bee needs to access an Ethereum blockchain node. We recommend running your own [Geth Goerli Node](), but for now let's take the easy way and sign up to [Infura](https://infura.io). Once you have created an account, go to your dashboard and make a new project (you can call it whatever you'd like to). Then select 'Goerli' from the project's 'endpoints' drop down menu in the 'settings' tab. You should now see a url appear which looks something like `https://goerli.infura.io/v3/0b85123456734ad6a247181cc535eabc`. Keep this open for later.
+Now we need to specify some Bee configuration. In order to access the blockchain, your Bee needs to access an Ethereum blockchain node. We recommend running your own [Geth Goerli Node](https://geth.ethereum.org/), but for now let's take the easy way and sign up to [Infura](https://infura.io). Once you have created an account, go to your dashboard and make a new project (you can call it whatever you'd like to). Then select 'Goerli' from the project's 'endpoints' drop down menu in the 'settings' tab. You should now see a url appear which looks something like `https://goerli.infura.io/v3/0b85123456734ad6a247181cc535eabc`. Keep this open for later.
 
 Now we will configure your Bee node so it can access the blockchain, deploy your chequebook and start making transactions to cash out those gBZZ cheques from your peers! Type:
 

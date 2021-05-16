@@ -1,6 +1,6 @@
 ---
 title: Host Your Website on Swarm
-id: host-your-website-using-ens
+id: host-your-website
 ---
 
 ENCRYPT ENCRYPT ENCRYPT

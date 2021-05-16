@@ -3,15 +3,6 @@ title: Configuration
 id: configuration
 ---
 
-IMPORTANT CONFIG
-
---full-node
---db-open-files-limit
---swap-endpoint
---nat-addr
-...
-
-
 Your Bee node can be configured by adding arguments terminal command on startup. 
 
 Run `bee start --help` in your Terminal to get the list of available command line arguments.
@@ -28,7 +19,7 @@ Bee runs as default in [Light Node](/docs/using-bee/light-nodes) mode. To fully 
 
 ### Swap Endpoint
 
-In order to access the blockchain, your Bee must be connected to an Ethereum blockchain node on the Goerli network. We recommend running your own [Geth Goerli Node](), but if you prefer, you may also sign up to [Infura's](https://infura.io) API service and set your `--swap-endpoint=https://goerli.infura.io/v3/your-api-key`
+In order to access the blockchain, your Bee must be connected to an Ethereum blockchain node on the Goerli network. We recommend running your own [Geth Goerli Node](https://geth.ethereum.org/), but if you prefer, you may also sign up to [Infura's](https://infura.io) API service and set your `--swap-endpoint=https://goerli.infura.io/v3/your-api-key`
 
 ### NAT Address
 
@@ -132,6 +123,7 @@ db-open-files-limit: "200"
 db-write-buffer-size: "33554432"
 debug-api-addr: :1635
 debug-api-enable: false
+full-node: false
 gateway-mode: false
 global-pinning-enable: false
 help: false
@@ -145,6 +137,8 @@ password-file: ""
 payment-early: "1000000000000"
 payment-threshold: "10000000000000"
 payment-tolerance: "50000000000000"
+postage-stamp-address: ""
+price-oracle-address: ""
 resolver-options: []
 standalone: false
 swap-enable: true
@@ -296,6 +290,11 @@ Ommiting the IP part of the address will cause the server to listen to all reque
 
 Set this to `true` to enable access to the [Debug API](/docs/api-reference/api-reference)
 
+#### --full-node
+
+*default* false
+
+Enable this by setting it to `true` to fully participate in serving and forwarding chunks to the network.
 
 #### --gateway-mode 
 
@@ -370,6 +369,18 @@ The threshold in BZZ where you expect to get paid from your peers.
 *default* `50000000000000`
 
 The excess debt above payment threshold in BZZ where you disconnect from your peer.
+
+#### --postage-stamp-address
+
+*default* *automatically configured depending on network*
+
+The address of the postage stamp contract on the Ethereum blockchain, used for buying batches of stamps.
+
+#### --price-oracle-address
+
+*default* *automatically configured depending on network*
+
+The address of the price oracle on the Ethereum blockchain, used for determining the current price of storage.
 
 #### --resolver-options 
 

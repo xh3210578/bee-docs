@@ -1,6 +1,6 @@
 ---
 title: Monitoring Your Node
-id: working-with-your-node
+id: monitoring
 ---
 
 - grafana

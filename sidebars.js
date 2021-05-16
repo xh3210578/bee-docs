@@ -6,7 +6,7 @@ module.exports = {
       label: 'Installation',
       items: [
         'getting-started/quick-start',
-        'getting-started/single',
+        'getting-started/install',
         'getting-started/manual',
         'getting-started/build-from-source',
         'getting-started/hive',
@@ -15,20 +15,51 @@ module.exports = {
         'getting-started/gateway',
         'getting-started/connectivity'
       ],
-      collapsed: false
+      collapsed: true
     },
     {
       type: 'category',
-      label: 'Taking Care of Bee',
+      label: 'Working With Bee',
       items: [
-        'workign-with-bee/introduction'
+        'working-with-bee/configuration',
+        'working-with-bee/debug-api',
+        'working-with-bee/logs-and-files',
+        'working-with-bee/bee-tools',
+        'working-with-bee/cashing-out',
+        'working-with-bee/monitoring',
+        'working-with-bee/backups',
+        'working-with-bee/upgrading-bee',
+        'working-with-bee/uninstalling-bee'
       ],
+      collapsed: true
     },
     {
       type: 'category',
       label: 'Using Bee',
       items: [
-        'using-bee/introduction'
+        'using-bee/introduction',
+        'using-bee/upload-and-download',
+        'using-bee/upload-a-directory',
+        'using-bee/host-your-website',
+        'using-bee/syncing',
+        'using-bee/keep-your-data-alive',
+        'using-bee/pinning',
+        'using-bee/light-nodes'
+      ],
+      collapsed: true
+    },
+    {
+      type: 'category',
+      label: 'Dapps on Swarm',
+      items: [
+        'dapps-on-swarm/introduction'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'FAQ',
+      items: [
+        'FAQ'
       ],
     },
     // {
@@ -74,27 +105,27 @@ module.exports = {
     //     'advanced/large-node-operators'
     //   ],
     // },
-    // {
-    //   type: 'category',
-    //   label: 'API Reference',
-    //   items: [
-    //     'api-reference/api-reference'
-    //   ],
-    // },
-    // {
-    //   type: 'category',
-    //   label: 'Bee Developers',
-    //   items: [
-    //     'bee-developers/useful-dev-info'
-    //   ],
-    // },
-    // {
-    //   type: 'category',
-    //   label: 'Join Us',
-    //   items: [
-    //     'community/community'
-    //   ],
-    //   collapsed: false
-    // }
+    {
+      type: 'category',
+      label: 'API Reference',
+      items: [
+        'api-reference/api-reference'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Bee Developers',
+      items: [
+        'bee-developers/useful-dev-info'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Join Us',
+      items: [
+        'community/community'
+      ],
+      collapsed: false
+    }
   ]
 };

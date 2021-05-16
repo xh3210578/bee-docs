@@ -1,6 +1,6 @@
 ---
 title: Track Upload Status
-id: tags
+id: syncing
 ---
 
 When you are uploading data to Swarm, it can take some time until this is completed. In order to help you validate whether the upload is completed or to estimate how long it will take, you can use the `tags` feature. 

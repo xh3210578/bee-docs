@@ -3,8 +3,6 @@ title: Install Bee
 id: install
 ---
 
-NOTE! ADD TO ADD EXTERNAL IP AND CHECK!
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -248,13 +246,13 @@ can interact with and deploy your chequebook contract. You can run your
 
 By default, Bee expects a local Goerli node at `http://localhost:8545`. To use a provider instead, change your configuration as follows.
 
-```
+```yaml
 swap-endpoint: https://goerli.infura.io/v3/<<your-api-key>>
 ```
 
 If you would like to use your node to resolve ENS domain names, you must also provide the endpoint for an Ethereum mainnet provider.
 
-```
+```yaml
 resolver-options: ["https://mainnet.infura.io/v3/<<your-api-key>>"]
 ```
 
@@ -266,7 +264,7 @@ Bee is designed to work on a lot of different hardware. To facilitate the explor
 
 For a new installation of Bee, the debug API endpoint is not yet exposed for security reasons. To enable the debug API endpoints, set `debug-api-enable` to `true` in your [configuration file](/docs/installation/configuration#configuring-bee-installed-using-a-package-manager) and restart your Bee service.
 
-```
+```yaml
 debug-api-enable: true
 debug-api-addr: 127.0.0.1:1635
 ```
@@ -279,7 +277,7 @@ Your Debug API contains sensitive endpoints, ensure that port `1635` is firewall
 
 Bee can be very intensive on your hardware. We are under in active development and we are fine tuning our settings to work best on all sorts of hardware. Try changing this to a higher number to allow your Bee to take full advantage of your hardware.
 
-```
+```yaml
 db-open-files-limit: 2000
 ```
 
@@ -389,7 +387,7 @@ If too much time has elapsed, you may need to restart your node at this point (s
 
 When first started, Bee must deploy a chequebook to the Goerli blockchain, and sync the postage stamp batch store so that it can check chunks for validity when storing or forwarding them. This can take a while, so please be patient! Once this is completed, you will see Bee starting to add peers and connect to the network.
 
-While you are waiting for Bee to initalise, this is a great time to [back up your keys]() for safe keeping.
+While you are waiting for Bee to initalise, this is a great time to [back up your keys](/docs/working-with-bee/backups) for safe keeping.
 
 ## Check Bee Is Working
 
@@ -419,6 +417,6 @@ curl -s localhost:1635/peers | jq ".peers | length"
 6
 ```
 
-Perfect! We are accumulating peers, this means you are connected to the network, and ready to start accumulating cheques you can [cash to get your gBZZ]() and [using Bee]() to [upload and download]() content or host and browse [websites]() on the unstoppable swarm network.
+Perfect! We are accumulating peers, this means you are connected to the network, and ready to start accumulating cheques you can [cash to get your gBZZ](/docs/working-with-bee/cashing-out) and [using Bee](/docs/using-bee/install) to [upload and download](/docs/using-bee/upload-and-download) content or host and browse [websites](/docs/using-bee/host-your-website) on the unstoppable swarm network.
 
 Welcome to the swarm! 🐝 🐝 🐝 🐝 🐝

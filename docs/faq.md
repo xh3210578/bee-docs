@@ -1,3 +1,8 @@
+---
+title: FAQ
+id: FAQ
+---
+
 ### Where's my gBZZ?
 
 ### Why can't I cash any cheques?
