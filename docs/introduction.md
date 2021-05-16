@@ -4,6 +4,8 @@ title: Welcome!
 slug: /
 ---
 
+https://hackmd.io/mgEgl8GcRMGZedJjI3jDDA
+
 Hello and welcome to the swarm! We are very happy to have you here with us! 🐝 
 
 As soon as your Bee client is up and running you will begin to connect with peers all over the world to become a part of Swarm, a global p2p network tasked with storing and distributing all of the world's data.
@@ -17,7 +19,7 @@ Don't have Bee installed yet? It's easy! Head over to the [installation](/docs/i
 To learn more about how to get the most out of Bee, head over to the [tutorials](/docs/getting-started/upload-and-download) section to find out how to share files with your friends, use Bee to host a website on a public Swarm Gateway, and much more...
 	
 ## Dapps
-Swarm is all about Dapps. We provide the most developer friendly environment to build Dapps on. Built on principles of functionality, flexibility and accessibility, Bee provides high level constructs for file storage, feeds and key-value stores, while also providing the low level access to other applications and libraries that create Single Owner and Trojan chunks clientside, with total e2e privacy.
+Swarm is all about Dapps. We provide the most developer friendly environment to build Dapps on. Built on principles of functionality, flexibility and accessibility, Bee provides high level constructs for file storage, feeds and key-value stores, while also providing the low level access to other applications and libraries that create Single Owner and Trojan chunks clientside, with total e2e privacy. Learn more about how to [develop on Swarm](/docs/develop-on-swarm/introduction)
 
 ## Incentives
 Need even more incentive to get involved with the wonderful world of Swarm? Find out how you'll soon be earning BZZ tokens for storing and distributing your share of the worlds data, sharing is caring!

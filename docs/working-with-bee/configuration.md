@@ -3,20 +3,46 @@ title: Configuration
 id: configuration
 ---
 
+IMPORTANT CONFIG
+
+--full-node
+--db-open-files-limit
+--swap-endpoint
+--nat-addr
+...
+
+
 Your Bee node can be configured by adding arguments terminal command on startup. 
 
 Run `bee start --help` in your Terminal to get the list of available command line arguments.
 
-#### Example
+#### Important Configuration Changes
 
-In this example, we change the port that the Bee API runs on, enable the Debug API, and set it to listen on port 6666.
+:::important
+When you start up Bee for the first time, there is some configuration to do! Make sure you consider updating the following recommended settings!
+:::
 
-```bash
-bee start \
-  --api-addr=:8888 \
-  --debug-api-enable=true \
-  --debug-api-addr=:6666
-```
+### Full Node
+
+Bee runs as default in [Light Node](/docs/using-bee/light-nodes) mode. To fully participate in the swarm, you must set your `--full-node` configuration to `true`.
+
+### Swap Endpoint
+
+In order to access the blockchain, your Bee must be connected to an Ethereum blockchain node on the Goerli network. We recommend running your own [Geth Goerli Node](), but if you prefer, you may also sign up to [Infura's](https://infura.io) API service and set your `--swap-endpoint=https://goerli.infura.io/v3/your-api-key`
+
+### NAT Address
+
+To enable others to connect to your node, you must broadcast your public IP and ensure Bee is accessible on the right p2p port (usually `1634`). We recommend you [manually configure your external IP and check connectivity](/docs/getting-started/connectivity) to ensure your Bee is able to receive connections from other peers.
+
+### LevelDB Open File Descriptors Limit
+
+Bee is designed to work on a lot of different hardware. To facilitate the exploration of this during our beeta phase, we have given node operators access to leveldb's `--db-open-files-limit`. This helps determine the speed with which Bee can read and write to it's database, and therefore it's efficiency in forwarding and serving chunks. Some say setting this to much more than the default 200 leads to a much enhanced ability to participate in the swarm and get those gBZZ! Share your experience in the #node-operators channel of our [Discord server](https://discord.gg/wdghaQsGq5) to help us make this process more automated in the future!
+
+### ENS Endpoint
+
+The ENS domain resolution system is used to host websites on Bee, and in order to use this your Bee must be connected to an Ethereum blockchain node on the main network. If you would like to [browse the swarm](/docs/using-bee/browse-the-swarm) We recommend you sign up to [Infura's](https://infura.io) API service and set your `--resolver-options=https://mainnet.infura.io/v3/your-api-key`.
+
+## Specifying Configuration
 
 ### Configuration file
 Bee can also be configured by providing a yaml configuration file using the `--config` flag.
@@ -29,8 +55,31 @@ bee start --config /home/<user>/bee-config.yaml
 Run `bee printconfig &> bee-default.yaml` to print a default version of the configuration file.
 :::
 
+### Environment variables
 
-### Configuring Bee Installed Using a Package Manager
+Bee config may also be passed using environment variables.
+
+Environment variables are set as variables in your operating systems session or systemd configuration file. To set an environment variable, type the following in your terminal session.
+
+```bash
+export VARIABLE_NAME=variableValue
+```
+
+Verify if it is correctly set by running `echo $VARIABLE_NAME`.
+
+All available configuration options are also available as prefixed, captilised and underscored environment variables.
+
+e.g. `--api-addr` becomes `BEE_API_ADDR`.
+
+### Precedence Order of Configuration
+
+Configuration is processed in the following ascending priority order of preference:
+
+1. Command Line Variables
+2. Environment Variables
+3. Configuration File
+
+## Configuring Bee Installed Using a Package Manager
 
 Bee node's installed using package managers `apt-get` or `yum` are configured using a configuration file which is automatically generated during the installation process.
 
@@ -385,28 +434,3 @@ Bee service identifier in tracing spans.
 *default* `""`
 
 Custom welcome message to be displayed to peers on succesful connection.
-
-
-### Environment variables
-
-Bee config may also be passed using environment variables.
-
-Environment variables are set as variables in your operating systems session or systemd configuration file. To set an environment variable, type the following in your terminal session.
-
-```bash
-export VARIABLE_NAME=variableValue
-```
-
-Verify if it is correctly set by running `echo $VARIABLE_NAME`.
-
-All available configuration options are also available as prefixed, captilised and underscored environment variables.
-
-e.g. `--api-addr` becomes `BEE_API_ADDR`.
-
-### Precedence Order of Configuration
-
-Configuration is processed in the following ascending priority order of preference:
-
-1. Command Line Variables
-2. Environment Variables
-3. Configuration File

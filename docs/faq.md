@@ -1,3 +1,11 @@
+### Where's my gBZZ?
+
+### Why can't I cash any cheques?
+
+### Is my Bee working?
+
+### Why are there so many errors in my logs?
+
 ### Which p2p port does Bee use and which should I open in my router?
 
 The default p2p port for Bee in 1634, please forward this using your router and allow traffic over your firewall as necessary. Bee also supports UPNP but it is recommended you do not use this protocol as it lacks security. For more detailed information see the connectivity section in the docs. https://docs.ethswarm.org/docs/installation/connectivity
