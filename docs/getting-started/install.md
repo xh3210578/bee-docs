@@ -417,6 +417,6 @@ curl -s localhost:1635/peers | jq ".peers | length"
 6
 ```
 
-Perfect! We are accumulating peers, this means you are connected to the network, and ready to start accumulating cheques you can [cash to get your gBZZ](/docs/working-with-bee/cashing-out) and [using Bee](/docs/using-bee/install) to [upload and download](/docs/using-bee/upload-and-download) content or host and browse [websites](/docs/using-bee/host-your-website) on the unstoppable swarm network.
+Perfect! We are accumulating peers, this means you are connected to the network, and ready to start accumulating cheques you can [cash to get your gBZZ](/docs/working-with-bee/cashing-out) and [using Bee](/docs/access-the-swarm/install) to [upload and download](/docs/access-the-swarm/upload-and-download) content or host and browse [websites](/docs/access-the-swarm/host-your-website) on the unstoppable swarm network.
 
 Welcome to the swarm! 🐝 🐝 🐝 🐝 🐝

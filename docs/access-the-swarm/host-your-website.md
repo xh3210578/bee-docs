@@ -3,7 +3,9 @@ title: Host Your Website on Swarm
 id: host-your-website
 ---
 
-ENCRYPT ENCRYPT ENCRYPT
+:::tip
+Comfortable with nodeJS and javascript? Check out [swarm-cli](/docs/working-with-bee/bee-tools), a command line tool you can use to easily interact with your Bee node!
+:::
 
 Bee treats ENS as a first class citizen, wherever you can use a Swarm reference, you can also use an ENS domain where the `content` ENS Resolver record is set to be a `bzz://` reference.
 

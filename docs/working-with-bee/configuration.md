@@ -15,7 +15,7 @@ When you start up Bee for the first time, there is some configuration to do! Mak
 
 ### Full Node
 
-Bee runs as default in [Light Node](/docs/using-bee/light-nodes) mode. To fully participate in the swarm, you must set your `--full-node` configuration to `true`.
+Bee runs as default in [Light Node](/docs/access-the-swarm/light-nodes) mode. To fully participate in the swarm, you must set your `--full-node` configuration to `true`.
 
 ### Swap Endpoint
 
@@ -31,7 +31,7 @@ Bee is designed to work on a lot of different hardware. To facilitate the explor
 
 ### ENS Endpoint
 
-The ENS domain resolution system is used to host websites on Bee, and in order to use this your Bee must be connected to an Ethereum blockchain node on the main network. If you would like to [browse the swarm](/docs/using-bee/browse-the-swarm) We recommend you sign up to [Infura's](https://infura.io) API service and set your `--resolver-options=https://mainnet.infura.io/v3/your-api-key`.
+The ENS domain resolution system is used to host websites on Bee, and in order to use this your Bee must be connected to an Ethereum blockchain node on the main network. If you would like to [browse the swarm](/docs/access-the-swarm/browse-the-swarm) We recommend you sign up to [Infura's](https://infura.io) API service and set your `--resolver-options=https://mainnet.infura.io/v3/your-api-key`.
 
 ## Specifying Configuration
 
