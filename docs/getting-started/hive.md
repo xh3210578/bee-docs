@@ -4,7 +4,7 @@ id: hive
 ---
 
 :::tip
-We recommend even our most 1337 readers go through a [single installation](/docs/installation/single) first to get a flavour of Bee, and to understand the nuances of the implementations. 👾
+We recommend even our most 1337 readers go through a [single installation](/docs/installation/install) first to get a flavour of Bee, and to understand the nuances of the implementations. 👾
 :::
 
 Because of [how the swarm is structured](/), we recommend that users wishing to scale up their Bee operation, or set up a commercial Bee hive should seek to run many instances of Bee simulataneously, rather than extend the storage size of individual nodes.

@@ -19,6 +19,23 @@ sudo systemctl stop bee
 
 Now follow the steps above to download the new package and install the new version, as usual.
 
+You will be greeted by the following prompt:
+
+```
+Configuration file '/etc/bee/bee.yaml'
+ ==> Modified (by you or by a script) since installation.
+ ==> Package distributor has shipped an updated version.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** bee.yaml (Y/I/N/O/D/Z) [default=N] ?
+```
+
+Select `N` to keep your current data and keys.
+
 You may now start your node again.
 
 ```sh
@@ -31,4 +48,4 @@ To upgrade your manual installation, simply stop Bee, replace the Bee binary and
 
 #### Docker
 
-To upgrade your docker installation, simply increment the version id in your configurations and restart.
+To upgrade your docker installation, simply increment the version number in your configurations and restart.

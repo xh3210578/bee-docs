@@ -130,22 +130,19 @@ docker-compose up -d
 Docker Compose will create a Docker Volume called `bee` containing important key material. Make sure to use to [backup](/docs/maintenance/backups) the contents of your Docker volume!
 :::
 
-Next we must fund our node using the [Swarm Goerli Faucet](https://faucet.ethswarm.org/). 
-
 To determine our address to fund, we can check the logs for our Bee container:
 
 ```bash
 docker-compose logs -f bee-1
 ```
 
-And look for the lines including your automatically generated Ethereum address (scroll right).
-
 ```
 bee_1 | time="2020-12-15T18:43:14Z" level=warning msg="please make sure there is sufficient eth and bzz available on 7a977fa660e2e93e1eba40030c6b8da68d01971e"
 time="2020-12-15T18:43:14Z" level=warning msg="on goerli you can get both goerli eth and goerli bzz from https://faucet.ethswarm.org?address=7a977fa660e2e93e1eba40030c6b8da68d01971e"
 ```
 
-Now, naviate to the [https://faucet.ethswarm.org](https://faucet.ethswarm.org/), enter your Ethereum address and submit the form to receive a supply of test Goerli Eth and Goerli BZZ.
+
+Once you have determined your Ethereum addresses, [fund your node](/docs/getting-started/fund-your-node)
 
 After your transaction has been completed, your node should recognise that your wallet has been funded, and begin to deploy and fund your Bee chequebook!
 

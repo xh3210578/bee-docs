@@ -11,7 +11,7 @@ Bee isn't just for mining gBZZ - learn how to [use Bee for all your dapp develop
 
 ## Bee JS
 
-Our amazing javascript team, the Bee-Gees (🕺), have been working hard in the last months to build some impressive tools for all you budding dapp developer Bees to get stuck into! Find out how to use the [bee-js](/docs/dapps-on-swarm/bee-js) javascript library to start creating your own that live and work on swarm!
+Our maverick javascript team, the Bee-Gees (🕺), have been working hard in the last months to build some impressive tools for all you budding dapp developer Bees to get stuck into! Find out how to use the [bee-js](/docs/dapps-on-swarm/bee-js) javascript library to start creating your own that live and work on swarm!
 
 ## Chunk Types
 

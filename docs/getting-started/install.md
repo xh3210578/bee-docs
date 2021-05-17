@@ -6,7 +6,9 @@ id: install
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The swarm thrives on decentralisation, and Bee is designed so that it works at it's best when many many individuals contribute a few Bee's each to the health and distributed nature of the system. It is easy to set up Bee on small and inexpensive computers, such as a [Raspberry Pi 4](https://www.raspberrypi.org/), spare hardware you have lying around, or even a cheap cloud hosted VPS (we recommend small, independent providers and colocations). 
+The swarm thrives on decentralisation, and Bee is designed so that it works at it's best when many individuals contribute to the health and distributed nature of the system by each running a Bee node. 
+
+It is easy to set up Bee on small and inexpensive computers, such as a [Raspberry Pi 4](/docs/getting-started/rasp-bee-ry-pi), spare hardware you have lying around, or even a cheap cloud hosted VPS (we recommend small, independent providers and colocations). 
 
 ## Installing Bee
 
@@ -15,10 +17,10 @@ Bee is packaged for MacOS and Ubuntu, Raspbian, Debian and CentOS based Linux di
 If your system is not supported, please see the [manual installation](/docs/installation/manual) section for information on how to install Bee.
 
 :::info
-If you would like to run a hive of many Bees, checkout the [node hive operators](/docs/advanced/node-hive-operators) for section for information on how to operate and monitor many Bees at once.
+If you would like to run a hive of many Bees, checkout the [node hive operators](/docs/getting-started/hive) section for information on how to operate and monitor many Bees at once.
 :::
 
-To install Bee you will go through the following process.
+To install Bee you will need to go through the following process.
 
  1. Set up the external signer for Bee, [Bee Clef](/docs/tooling/bee-clef). (Recommended) 
  2. Install Bee and set it up to run as a service.
@@ -26,10 +28,6 @@ To install Bee you will go through the following process.
  4. [fund your node](/docs/installation/quick-start#fund-your-node) with gETH and gBZZ
  5. Wait for your chequebook transactions to complete and batch store to update.
  6. Check Bee is working.
-
-## Recommended Hardware
-
-tbc
 
 ## Install Bee Clef
 
@@ -146,7 +144,7 @@ launchctl list | grep swarm-clef
 
 ## Install Bee
 
-Next, install Bee itself, simply choose the appropriate command from the ones below. This will set automatically up your Bee and start running it in the background as a service on your computer.
+Next, install Bee itself, simply choose the appropriate command from the ones below. This will set automatically up your Bee and start it running in the background as a service on your computer.
 
 <Tabs
   defaultValue="debian"
@@ -227,17 +225,21 @@ brew services start swarm-bee
 
 ## Configure Bee
 
-Because Bee has many use cases and may run on many different specifications of hardware, it is important that you configure Bee so it will work best for you.
+Because Bee has many use cases and may run on many different specifications of hardware, it is important that you configure Bee so that it will work best for you.
 
 ### Important Configuration Parameters
 
-Please consider changing the following parameters. See below on how to change your configuration and restart your Bee service.
+Please consider changing the following parameters. See below for more info on how to change your configuration and restart your Bee service.
 
 #### Full Node or Light Node
 
-Since Bee can take a lot of resources when providing services to the network in exchange for gBZZ, your Bee node starts off in Light Node mode by default. To allow your Bee to use your network bandwidth and computing resources to serve the network, set the `--full-node` flag to `true`.
+Since Bee can take a lot of resources when providing services to the network in exchange for gBZZ, a Bee node starts off in Light Node mode by default. To allow your Bee to use your network bandwidth and computing resources to serve the network and start [cashing out](/docs/working-with-bee/cashing-out) cheques, set the `--full-node` flag to `true`.
 
-#### Ethereum blockchain
+```yaml
+full-node: true
+```
+
+#### Blockchain Endpoints
 
 Your Bee node must have access to the Ethereum Goerli testnet blockchain, so that it
 can interact with and deploy your chequebook contract. You can run your
@@ -256,9 +258,13 @@ If you would like to use your node to resolve ENS domain names, you must also pr
 resolver-options: ["https://mainnet.infura.io/v3/<<your-api-key>>"]
 ```
 
-#### DB Open File Descriptors Limit
+#### Open File Descriptors
 
-Bee is designed to work on a lot of different hardware. To facilitate the exploration of this during our beeta phase, we have given node operators access to leveldb's `--db-open-files-limit`. This helps determine the speed with which Bee can read and write to it's database, and therefore it's efficiency in forwarding and serving chunks. Some say setting this to much more than the default 200 leads to a much enhanced ability to participate in the swarm and get those gBZZ! Share your experience in the #node-operators channel of our [Discord server](https://discord.gg/wdghaQsGq5) to help us make this process more automated in the future!
+Bee is designed to work on a lot of different hardware configurations. To facilitate the exploration of this, during our beeta phase, we have given node operators access to leveldb's `--db-open-files-limit`. This helps determine the speed with which Bee can read and write to its database, and therefore its efficiency in forwarding and serving chunks. Some say setting this to much more than the default 200 leads to a much enhanced ability to participate in the swarm and get those gBZZ! Share your experience in the #node-operators channel of our [Discord server](https://discord.gg/wdghaQsGq5) to help us make this process more automated in the future!
+
+```yaml
+db-open-files-limit: 2000
+```
 
 #### Debug API
 
@@ -269,20 +275,14 @@ debug-api-enable: true
 debug-api-addr: 127.0.0.1:1635
 ```
 
+Some package manager installations will automatically set your debug api to be listening on localhost.
+
 :::caution
 Your Debug API contains sensitive endpoints, ensure that port `1635` is firewalled and *never* exposed to the public internet.
 :::
 
-#### Open File Descriptors
-
-Bee can be very intensive on your hardware. We are under in active development and we are fine tuning our settings to work best on all sorts of hardware. Try changing this to a higher number to allow your Bee to take full advantage of your hardware.
-
-```yaml
-db-open-files-limit: 2000
-```
-
 :::info
-See the [configuration](configuration) section for more information on how to fine tune your Bee.
+See the [configuration](/docs/working-with-bee/configuration) section for more information on how to fine tune your Bee.
 :::
 
 ### Edit Config File
@@ -331,7 +331,7 @@ brew services restart swarm-bee
 
 ## Fund Your Bee
 
-In order to deploy it's chequebook, your Bee needs gBZZ and gETH.
+In order to deploy it's chequebook and interact with the swarm, your Bee needs gBZZ and gETH.
 
 First, find out your Ethereum address.
 
@@ -371,10 +371,12 @@ head -18 $(brew --prefix)/var/log/swarm-bee/bee.log | grep ethereum
 </TabItem>
 </Tabs>
 
-Once you have determined your Ethereum address, join our [Discord server](https://discord.gg/wdghaQsGq5) and navigate to the [#faucet-request](https://discord.gg/4dtgqAueGh) channel. After you have [verified](https://discord.gg/tXGPdzZQaV) (and said hi 👋!), write a message like the following, remembering to replace your Ethereum address for this one:
+Once you have determined your Ethereum address, join our [Discord server](https://discord.gg/wdghaQsGq5) and navigate to the [#faucet](https://discord.gg/kfKvmZfVfe) channel. After you have [verified your username](https://discord.gg/tXGPdzZQaV) (and said hi! 👋), use our Faucet Bot to get your test tokens.
+
+Here you must **type** (not copy paste) the following, replacing the address with your own:
 
 ```
-sprinkle 0xefbc376472dd4654cb04472e2370ae02d0102520
+/faucet sprinkle 0xabeeecdef123452a40f6ea9f598596ca8556bd57
 ```
 
 gBZZ and gETH will be then sent to your Ethereum address!
@@ -387,11 +389,11 @@ If too much time has elapsed, you may need to restart your node at this point (s
 
 When first started, Bee must deploy a chequebook to the Goerli blockchain, and sync the postage stamp batch store so that it can check chunks for validity when storing or forwarding them. This can take a while, so please be patient! Once this is completed, you will see Bee starting to add peers and connect to the network.
 
-While you are waiting for Bee to initalise, this is a great time to [back up your keys](/docs/working-with-bee/backups) for safe keeping.
+While you are waiting for Bee to initalise, this is a great time to [back up your keys](/docs/working-with-bee/backups) so you can keep the tokens you earn safe.
 
 ## Check Bee Is Working
 
-Once Bee has been funded, chequebooks deplyed and postage stamp batch store synced, its HTTP
+Once Bee has been funded, chequebooks are deployed and postage stamp batch store synced, its HTTP
 [API](/docs/api-reference/api-reference) will start listening at
 `localhost:1633`.
 
@@ -408,6 +410,11 @@ Ethereum Swarm Bee
 Great! Our api is listening!
 
 Next, let's see if we have connected with any peers.
+
+:::info
+Here we are using the `jq` utility to parse our javascript. Use your package manager to install `jq`, or simply remove everything after and including the first `|` to view the raw json without it.
+:::
+
 
 ```bash
 curl -s localhost:1635/peers | jq ".peers | length"

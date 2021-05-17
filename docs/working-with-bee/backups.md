@@ -6,7 +6,7 @@ id: backups
 In order to ensure you are able to redeploy your Bee node in the event of a disaster, the contents of several directories must be retained.
 
 :::danger
-Your keys represent your ability to access your gBZZ. Make sure to back up your keys directory in multiple places, so you can keep your gBZZs safe! See [below](/docs/working-with-bee/backups)
+Your keys represent your ability to access your gBZZ. Make sure to back up your keys directory in multiple places, so you can keep your gBZZs safe! See below to discover the location of your keys.
 :::
 
 :::info
@@ -54,11 +54,23 @@ docker cp bee_clef_1:/app clef
 
 ## Data Types
 
-The Bee data directory contains three stores.
+Your Bee data directory contains three stores.
+
+```
+/Users/sig/.bee
+├── keys
+│   ├── libp2p.key
+│   ├── pss.key
+│   └── swarm.key
+├── localstore
+│   └── ...
+└── statestore
+    └── ...
+```
 
 ### Keys
 
-The keys directory contains your important key material. This is the most important data by far, and is produced and retained from Bee's initialisation procedure. If you have used **Bee-clef** to manage your key material and signing procedures, see [below](/docs/maintenance/backups#ubuntu--debian--raspbian--centos-package-managers-1) for information on how to keep backups.
+The keys directory contains your important key material. This is the most important data by far, and is produced and retained from Bee's initialisation procedure. If you have used **Bee-clef** to manage your key material and signing procedures, see below for information on how to keep backups of your keys.
 
 ### Statestore
 
@@ -74,7 +86,11 @@ It is also important to back up Clef's stored data. This includes your sensitive
 
 ### Ubuntu / Debian / Raspbian / CentOS Package Managers
 
-For Linux installations from package managers *yum* or *apt*, your Clef data directory is located at:
+:::danger
+Your keys represent your ability to access your gBZZ. Make sure to back up your keys directory in multiple places, so you can keep your gBZZs safe!
+:::
+
+For Linux installations from package managers *yum* or *apt*, your Clef data directory is located at.
 
 ```bash
 /var/lib/bee-clef/

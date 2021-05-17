@@ -19,10 +19,10 @@ Don't have Bee installed yet? It's easy! Head over to the [installation](/docs/i
 To learn more about how to get the most out of Bee, head over to the [working with Bee](/docs/getting-started/upload-and-download) section to find out how to share files with your friends, use Bee to host a website on a public Swarm Gateway, and much more...
 	
 ## Dapps
-Swarm is all about Dapps. We provide the most developer friendly environment to build Dapps on. Built on principles of functionality, flexibility and accessibility, Bee provides high level constructs for file storage, feeds and key-value stores, while also providing the low level access to other applications and libraries that create Single Owner and Trojan chunks clientside, with total e2e privacy. Learn more about how to [develop on Swarm](/docs/develop-on-swarm/introduction)
+Swarm is all about dapps. We strive to provide the most developer friendly environment in which to build dapps. Built on principles of functionality, flexibility and accessibility, Bee provides high level constructs for file storage, feeds and key-value stores, while also providing the low level access with libraries that create Single Owner and Trojan chunks clientside, with total e2e privacy. Learn more about how to [develop on Swarm](/docs/develop-on-swarm/introduction)
 
 ## Incentives
-Need even more incentive to get involved with the wonderful world of Swarm? Find out how you'll soon be earning BZZ tokens for storing and distributing your share of the worlds data, sharing is caring!
+Need even more incentive to get involved with the wonderful world of Swarm? Find out how you'll soon be [earning gBZZ tokens](/docs/working-with-bee/cashing-out) for storing and distributing your share of the worlds data, sharing is caring!
 
 ## Find Out More
 What happens with your Bee node when you start it up? Want to know more about the amazing Swarm technology behind Bee?
@@ -40,7 +40,6 @@ There is a vibrant and buzzing community behind Swarm, get involved in one of ou
 - [Twitter @ethswarm](https://twitter.com/ethswarm)
 - [reddit channel](https://www.reddit.com/r/ethswarm/)
 - [Medium](https://ethswarm.medium.com/)
-- [Swarm Bee Support](https://t.me/joinchat/LTr8vBf8JshNlAD3m9BGJQ)
 
 ## Reporting a bug
 If your Bee isn't working, get in touch with our [#bee-support channel on Discord](https://discord.gg/wdghaQsGq5) or [let us know on GitHub!](https://github.com/ethersphere/bee/issues) Every Bee is important to us and we'll get right to work on fixing it for you as soon as possible. 🐝

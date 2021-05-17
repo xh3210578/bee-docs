@@ -12,8 +12,8 @@ module.exports = {
         'getting-started/hive',
         'getting-started/docker',
         'getting-started/bee-clef',
-        'getting-started/gateway',
-        'getting-started/connectivity'
+        'getting-started/connectivity',
+        'getting-started/fund-your-node'
       ],
       collapsed: true
     },
@@ -35,16 +35,16 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Using Bee',
+      label: 'Access the Swarm',
       items: [
-        'using-bee/introduction',
-        'using-bee/upload-and-download',
-        'using-bee/upload-a-directory',
-        'using-bee/host-your-website',
-        'using-bee/syncing',
-        'using-bee/keep-your-data-alive',
-        'using-bee/pinning',
-        'using-bee/light-nodes'
+        'access-the-swarm/introduction',
+        'access-the-swarm/upload-and-download',
+        'access-the-swarm/upload-a-directory',
+        'access-the-swarm/host-your-website',
+        'access-the-swarm/syncing',
+        'access-the-swarm/keep-your-data-alive',
+        'access-the-swarm/pinning',
+        'access-the-swarm/light-nodes'
       ],
       collapsed: true
     },
@@ -52,59 +52,14 @@ module.exports = {
       type: 'category',
       label: 'Dapps on Swarm',
       items: [
-        'dapps-on-swarm/introduction'
+        'dapps-on-swarm/introduction',
+        'dapps-on-swarm/develop-on-bee',
+        'dapps-on-swarm/bee-js',
+        'dapps-on-swarm/chunk-types',
+        'dapps-on-swarm/feeds',
+        'dapps-on-swarm/pss'
       ],
     },
-    {
-      type: 'category',
-      label: 'FAQ',
-      items: [
-        'FAQ'
-      ],
-    },
-    // {
-    //   type: 'category',
-    //   label: 'Basic Usage',
-    //   items: [
-    //     'getting-started/working-with-your-node',
-    //     'getting-started/upload-and-download',
-    //     'getting-started/upload-a-directory',
-    //     'getting-started/host-your-website-using-ens',
-    //     'getting-started/store-with-encryption'
-    //   ],
-    //   collapsed: false,
-    // },
-    // {
-    //   type: 'category',
-    //   label: 'Maintainance',
-    //   items: [
-    //     'maintenance/backups'
-    //   ],
-    // },
-    // {
-    //   type: 'category',
-    //   label: 'Basic Usage',
-    //   items: [
-    //     'getting-started/working-with-your-node',
-    //     'getting-started/upload-and-download',
-    //     'getting-started/upload-a-directory',
-    //     'getting-started/host-your-website-using-ens',
-    //     'getting-started/store-with-encryption'
-    //   ],
-    //   collapsed: false,
-    // },
-    // {
-    //   type: 'category',
-    //   label: 'Advanced Usage',
-    //   items: [
-    //     'advanced/pss',
-    //     'advanced/tags',
-    //     'advanced/persistence',
-    //     'advanced/swap',
-    //     'advanced/starting-a-test-network',
-    //     'advanced/large-node-operators'
-    //   ],
-    // },
     {
       type: 'category',
       label: 'API Reference',
@@ -121,9 +76,17 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'FAQ',
+      items: [
+        'FAQ'
+      ],
+    },
+    {
+      type: 'category',
       label: 'Join Us',
       items: [
-        'community/community'
+        'community/community',
+        'community/awesome-swarm'
       ],
       collapsed: false
     }

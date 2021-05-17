@@ -1,3 +1,24 @@
+tasks remaining
+---------------
+
+change getting-started to installation
+write monitoring your node
+upload change api
+dry up funding
+finish FAQ
+fix FAQs
+
+
+
+...
+
+
+
+
+
+
+
+
 add funnels, 
 community generated tooling, 
 tooling, maybe bit of dapps, 

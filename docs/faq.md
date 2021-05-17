@@ -3,13 +3,13 @@ title: FAQ
 id: FAQ
 ---
 
-### Where's my gBZZ?
+<!-- ### Where's my gBZZ?
 
 ### Why can't I cash any cheques?
 
 ### Is my Bee working?
 
-### Why are there so many errors in my logs?
+### Why are there so many errors in my logs? -->
 
 ### Which p2p port does Bee use and which should I open in my router?
 
@@ -145,12 +145,12 @@ It's like what the bank thinks your balance is vs what your checkbook knows is a
 
 ### What determines the number of peers and how to influence their number? Why are there sometimes 300+ peers and sometimes 30?
 
-The number of connected peers is determined by your node as it attempts to keep the distributed Kademlia well connected.  As nodes come and go in the network your peer count will go up and down. If you watch bee's output logs for "successfully connected", there should be a mix of (inbound) and (outbound) at the end of those messages.  If you only get (outbound) then you my need to get your p2p port opened through your firewall and/or forwarded by your router. Check out the connectivity section in the doc (link)
+The number of connected peers is determined by your node as it attempts to keep the distributed Kademlia well connected.  As nodes come and go in the network your peer count will go up and down. If you watch bee's output logs for "successfully connected", there should be a mix of (inbound) and (outbound) at the end of those messages.  If you only get (outbound) then you my need to get your p2p port opened through your firewall and/or forwarded by your router. Check out the connectivity section in the docs https://docs.ethswarm.org/docs/installation/connectivity.
 
 ### What is the difference between "systemctl" and "bee start"?
 
-"bee start" and "systemctl start bee" actually run 2 different instances with 2 different bee.yaml files and two different data directories.
+`bee start` and `systemctl start bee` actually run 2 different instances with 2 different `bee.yaml` files and two different data directories.
 
-"bee start" uses ~/.bee.yaml and the ~/.bee directory for data
-systemctl uses /etc/bee/bee.yaml and (IIRC) /var/lib/bee for data
+`bee start` uses `~/.bee.yaml` and the `~/.bee` directory for data
+`systemctl` uses `/etc/bee/bee.yaml` and (IIRC) `/var/lib/bee` for data
 
