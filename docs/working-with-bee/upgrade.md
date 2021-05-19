@@ -56,7 +56,7 @@ If any non-zero values are returned, **you must** complete the following steps.
 
 Your Bee should start up as normal, and begin to connect to other Bees that are running Bee 0.6.0 or later.
 
-**For a brute force approach, simply download and reupload all chunks returned by the `pins` endpoint.*
+* *For a brute force approach, simply download and reupload all chunks returned by the `pins` endpoint.*
 
 #### Ubuntu / Debian / Raspbian
 
