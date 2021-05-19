@@ -1,37 +1,52 @@
-## Awesome Swarm 🐝  🐝  🐝
+---
+title: Awesome Swarm
+id: awesome-swarm
+---
 
-An [awesome list](https://awesome.re) about everything related to the Swarm platform.
+An [awesome list](https://awesome.re) on anything awesome related to the Swarm platform. 🐝  🐝  🐝
 
 Swarm is a decentralised storage and communication system for a sovereign digital society.
 
 We love your contribution, pull requests are most welcome!
 
-In the spirit of inclusion, and because we are in the early days, some 'unfinished' gems will be included. And for the truly awesome, extra awesomeness will be indicated appropriately.
+### Official
 
-### Contents
+#### Documentation
 
-1. Documentation
-2. Programming
-3. Tools
-4. Code
-5. Infrastructure
-6. Contracts
-5. Community
-6. More Info
-Book of Swarm
+https://github.com/ethersphere/bee-docs
+https://github.com/ethersphere/bee-js-docs
+
+#### Source
+
+https://github.com/ethersphere/bee
+https://github.com/ethersphere/bee-js
+
+#### Contracts
+
+https://github.com/ethersphere/swap-swear-swindle
+https://github.com/ethersphere/storage-incentives
+
+#### The Book of Swarm
+
+https://gateway.ethswarm.org/bzz/latest.bookofswarm.eth/
 
 ### Documentation
 
 ### Tools
 
-- https://github.com/ethersphere/bee-factory
-- https://github.com/ethersphere/bee-js
-- https://github.com/ethersphere/bee-dashboard
-- https://github.com/ethersphere/swarm-cli
+https://github.com/ethersphere/bee-factory
+https://github.com/ethersphere/bee-dashboard
+https://github.com/ethersphere/swarm-cli
+
+### Misc
+
+https://github.com/ethersphere/swarm-bot
 
 ### Community
 
 Thanks so much to everyone in our wonderful community for getting involved with the project, submitting bugs and even PR's. Special thanks to those extra special individuals who have taken the time to create software that interacts with the swarm. We're overjoyed and humbled by your enthusiasm. Thanks for being part of the swarm! 🐝  🐝  🐝
+
+In the spirit of inclusion, and because we are in the early days, some 'unfinished' gems will be included. And for the truly awesome, extra awesomeness will be indicated appropriately.
 
 :::warning
 This is community generated software and come no guarantees. Use at your own risk.
@@ -44,4 +59,5 @@ This is community generated software and come no guarantees. Use at your own ris
 - https://github.com/mfw78/apiarist
 - https://github.com/nnnggel/swam-base
 - https://github.com/jmozah/swarm-crawler
+- https://github.com/beejeez/beejeez 👀
 
