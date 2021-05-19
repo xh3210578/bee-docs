@@ -25,7 +25,3 @@ Earn [gBZZ](/docs/working-with-bee/cashing-out) and help keep the swarm strong b
 Take it to the next level by running a whole hive of Bees. We provide tooling and monitoring for to help you manage large deployments of many Bee nodes.
 
 [Bee Hives](/docs/installation/hive)
-
-<!-- ### [Help Others Access the Swarm](/docs/installation/gateway.md)
-
-Contribute to the decentralisation of the swarm by creating your own Swarm Gateway so that users who aren't running Bee can connect to the swarm.  -->
