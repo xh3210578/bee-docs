@@ -72,9 +72,17 @@ Your Bee data directory contains three stores.
 
 The keys directory contains your important key material. This is the most important data by far, and is produced and retained from Bee's initialisation procedure. If you have used **Bee-clef** to manage your key material and signing procedures, see below for information on how to keep backups of your keys.
 
+:::info
+If you are using Bee to manage your keys (not recommended - please use [Bee Clef]()!). You must convert your keys in order to import into Metamask and other Ethereum wallets. You may use [exportSwarmKeys](https://github.com/ethersphere/exportSwarmKeys) to make the conversion.
+:::
+
 ### Statestore
 
 The statestore directory retains information related to your node, including SWAP balances, info on peers, blocklisting and much more.
+
+:::info
+Although your statestore retains your node's state. It is only possible to restore from this if your node has not been connected in the meantime, as the blockchain and state may have desyncronised if your node was turned on in the meantime.
+:::
 
 ### Localstore
 
