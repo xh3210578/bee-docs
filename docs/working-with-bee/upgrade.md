@@ -12,7 +12,7 @@ Bee sure to [backup](/docs/working-with-bee/backups) your clef key material and 
 
 ### Upgrading from 0.5.x Series to 0.6.x
 
-Bee 0.6.0 contains a few breaking changes which mean a database migration must take place. We also intoduce [postage stamps]() which must be attached to chunks of data so that they will be retained in the Swarm network.
+Bee 0.6.0 contains a few breaking changes which mean a database migration must take place. We also intoduce [postage stamps](/docs/access-the-swarm/keep-your-data-alive) which must be attached to chunks of data so that they will be retained in the Swarm network.
 
 As part of these changes, if you have any **locally pinned content**, this must be manually migrated to the new data structure expected by the network of 0.6.0 clients, see below for information on how to proceed. 
 

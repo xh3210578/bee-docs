@@ -11,7 +11,7 @@ To start up your node, you will already have provided your node with gETH for ga
 
 `/faucet stamps 0xabeecde123...`
 
-You must type the commands, copy and paste will not work.
+You must *type* the commands, copy and paste will not work.
 
 ## Purchase a Batch of Stamps
 
