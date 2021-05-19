@@ -5,15 +5,15 @@ module.exports = {
       type: 'category',
       label: 'Installation',
       items: [
-        'getting-started/quick-start',
-        'getting-started/install',
-        'getting-started/manual',
-        'getting-started/build-from-source',
-        'getting-started/hive',
-        'getting-started/docker',
-        'getting-started/bee-clef',
-        'getting-started/connectivity',
-        'getting-started/fund-your-node'
+        'installation/quick-start',
+        'installation/install',
+        'installation/manual',
+        'installation/build-from-source',
+        'installation/hive',
+        'installation/docker',
+        'installation/bee-clef',
+        'installation/connectivity',
+        'installation/fund-your-node'
       ],
       collapsed: true
     },
