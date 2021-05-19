@@ -142,7 +142,7 @@ time="2020-12-15T18:43:14Z" level=warning msg="on goerli you can get both goerli
 ```
 
 
-Once you have determined your Ethereum addresses, [fund your node](/docs/getting-started/fund-your-node)
+Once you have determined your Ethereum addresses, [fund your node](/docs/installation/fund-your-node)
 
 After your transaction has been completed, your node should recognise that your wallet has been funded, and begin to deploy and fund your Bee chequebook!
 

@@ -16,7 +16,7 @@ Swarm aspires to shape the future towards a self-sovereign global society and pe
 Don't have Bee installed yet? It's easy! Head over to the [installation](/docs/installation/quick-start) section to get Bee up and running.
 
 ## Usage
-To learn more about how to get the most out of Bee, head over to the [working with Bee](/docs/getting-started/upload-and-download) section to find out how to share files with your friends, use Bee to host a website on a public Swarm Gateway, and much more...
+To learn more about how to get the most out of Bee, head over to the [working with Bee](/docs/installation/upload-and-download) section to find out how to share files with your friends, use Bee to host a website on a public Swarm Gateway, and much more...
 	
 ## Dapps
 Swarm is all about dapps. We strive to provide the most developer friendly environment in which to build dapps. Built on principles of functionality, flexibility and accessibility, Bee provides high level constructs for file storage, feeds and key-value stores, while also providing the low level access with libraries that create Single Owner and Trojan chunks clientside, with total e2e privacy. Learn more about how to [develop on Swarm](/docs/develop-on-swarm/introduction)

@@ -23,7 +23,7 @@ In order to access the blockchain, your Bee must be connected to an Ethereum blo
 
 ### NAT Address
 
-To enable others to connect to your node, you must broadcast your public IP and ensure Bee is accessible on the right p2p port (usually `1634`). We recommend you [manually configure your external IP and check connectivity](/docs/getting-started/connectivity) to ensure your Bee is able to receive connections from other peers.
+To enable others to connect to your node, you must broadcast your public IP and ensure Bee is accessible on the right p2p port (usually `1634`). We recommend you [manually configure your external IP and check connectivity](/docs/installation/connectivity) to ensure your Bee is able to receive connections from other peers.
 
 ### LevelDB Open File Descriptors Limit
 

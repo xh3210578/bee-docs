@@ -4,14 +4,14 @@ id: manual
 ---
 
 :::caution
-While it is possible to run Bee without it, we recommend the use of Go Ethereum's Clef external signer. Instructions for installing and integrating this with Bee can be found [here](/docs/getting-started/bee-clef).
+While it is possible to run Bee without it, we recommend the use of Go Ethereum's Clef external signer. Instructions for installing and integrating this with Bee can be found [here](/docs/installation/bee-clef).
 :::
 
 ### Quick Install (Stable)
 
 We provide a convenient [installation script](https://github.com/ethersphere/bee/blob/637b67a8e0a2b15e707f510bb7f49aea4ef6c110/install.sh), which automatically detects your execution environment and installs the latest stable version of the Bee client on your computer.
 
-If your system is not supported, you might want to try to [build directly from source](/docs/getting-started/build-from-source).
+If your system is not supported, you might want to try to [build directly from source](/docs/installation/build-from-source).
 
 To install the binary using our quick install script, run either one of the following commands in your Terminal...
 
@@ -47,7 +47,7 @@ This command will start Bee for the first time and prompt you to create your Bee
 
 When you first run Bee, you will be asked to input a user password. It is important to choose a strong unique password, as this will protect your valuable **private key** which is generated during startup. 
 
-This secret key is stored encrypted in your [Bee data directory](/docs/getting-started/configuration#--data-dir) (usually `~/.bee`). It represents your Swarm Address - your anonymous identity in Swarm.
+This secret key is stored encrypted in your [Bee data directory](/docs/installation/configuration#--data-dir) (usually `~/.bee`). It represents your Swarm Address - your anonymous identity in Swarm.
 
 ```
 bee start

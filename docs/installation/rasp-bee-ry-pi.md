@@ -48,7 +48,7 @@ PING wikipedia.org (91.198.174.192): 56 data bytes
 
 ### Install Bee Clef and Bee
 
-Next we will install the Bee software, accompanied by a special port of Ethereum's Clef signer, [Bee Clef](/docs/getting-started/bee-clef).
+Next we will install the Bee software, accompanied by a special port of Ethereum's Clef signer, [Bee Clef](/docs/installation/bee-clef).
 
 We must install Bee Clef before Bee. To do so, open the browser (the 🌐 icon) and type the following to open these docs on your Raspberry Pi [https://docs.ethswarm.org](https://docs.ethswarm.org).
 

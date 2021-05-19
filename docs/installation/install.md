@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 The swarm thrives on decentralisation, and Bee is designed so that it works at it's best when many individuals contribute to the health and distributed nature of the system by each running a Bee node. 
 
-It is easy to set up Bee on small and inexpensive computers, such as a [Raspberry Pi 4](/docs/getting-started/rasp-bee-ry-pi), spare hardware you have lying around, or even a cheap cloud hosted VPS (we recommend small, independent providers and colocations). 
+It is easy to set up Bee on small and inexpensive computers, such as a [Raspberry Pi 4](/docs/installation/rasp-bee-ry-pi), spare hardware you have lying around, or even a cheap cloud hosted VPS (we recommend small, independent providers and colocations). 
 
 ## Installing Bee
 
@@ -17,7 +17,7 @@ Bee is packaged for MacOS and Ubuntu, Raspbian, Debian and CentOS based Linux di
 If your system is not supported, please see the [manual installation](/docs/installation/manual) section for information on how to install Bee.
 
 :::info
-If you would like to run a hive of many Bees, checkout the [node hive operators](/docs/getting-started/hive) section for information on how to operate and monitor many Bees at once.
+If you would like to run a hive of many Bees, checkout the [node hive operators](/docs/installation/hive) section for information on how to operate and monitor many Bees at once.
 :::
 
 To install Bee you will need to go through the following process.

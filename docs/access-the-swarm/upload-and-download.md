@@ -49,7 +49,7 @@ curl --data-binary @bee.jpg  -H "Swarm-Postage-Batch-Id: 78a26be9b42317fe6f0cbea
 ```
 
 :::danger
-Data uploaded to the swarm is always public. In Swarm, sensitive files must be [encrypted](/docs/getting-started/store-with-encryption) before uploading to ensure their contents always remains private.
+Data uploaded to the swarm is always public. In Swarm, sensitive files must be [encrypted](/docs/installation/store-with-encryption) before uploading to ensure their contents always remains private.
 :::
 
 When succesful, a json formatted response will be returned, containing a **swarm reference** or **hash** which is the *address* of the uploaded file, for example:
