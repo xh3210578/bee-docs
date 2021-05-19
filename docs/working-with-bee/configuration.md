@@ -108,16 +108,17 @@ This produces the following file contents, showing the default configuration of 
 
 ```yaml
 api-addr: :1633
+block-time: "15"
 bootnode:
 - /dnsaddr/bootnode.ethswarm.org
 bootnode-mode: false
+cache-capacity: "1000000"
 clef-signer-enable: false
 clef-signer-endpoint: ""
 clef-signer-ethereum-address: ""
 cors-allowed-origins: []
 data-dir: /Users/sig/.bee
 db-block-cache-capacity: "33554432"
-db-capacity: "5000000"
 db-disable-seeks-compaction: false
 db-open-files-limit: "200"
 db-write-buffer-size: "33554432"
@@ -136,18 +137,19 @@ password: ""
 password-file: ""
 payment-early: "1000000000000"
 payment-threshold: "10000000000000"
-payment-tolerance: "50000000000000"
+payment-tolerance: "10000000000000"
 postage-stamp-address: ""
-price-oracle-address: ""
 resolver-options: []
 standalone: false
 swap-enable: true
-swap-endpoint: http://localhost:8545
+swap-endpoint: ws://localhost:8546
 swap-factory-address: ""
-swap-initial-deposit: "100000000000000000"
+swap-initial-deposit: "10000000000000000"
+swap-legacy-factory-addresses: []
 tracing-enable: false
 tracing-endpoint: 127.0.0.1:6831
 tracing-service-name: bee
+transaction: ""
 verbosity: info
 welcome-message: ""
 ```
@@ -172,6 +174,12 @@ The location of a yaml configuration file containing configuration instructions.
 
 The ip and port the API will serve http requests from. Ommiting the IP part of the address will cause the server to listen to all interfaces. Argument values are of the form '132.132.132.132:1633'.
 
+#### --block-time
+
+*default* 15
+
+The expected block time of the attached SWAP endpoint.
+
 #### --bootnode
 
 *default* `/dnsaddr/bootnode.ethswarm.org`
@@ -181,6 +189,12 @@ This is a [multiaddr](https://github.com/multiformats/multiaddr) specifying the 
 By default a node connects to the Swarm mainnet.  When using a private or test network, network specific bootnodes must be set. 
 
 Any Bee node in a network can act as a bootnode.
+
+#### --cache-capacity
+
+*default* `1000000`
+
+The amount of disk space, in chunks, that is used for forwarding and uploading chunks.
 
 #### --clef-signer-enable             
 
@@ -241,12 +255,6 @@ Keep the key files in your keystore data directory safe!
 
 They are the cryptographic proof of your network identity and cannot be recovered.
 :::
-
-#### --db-capacity 
-
-*default* `5000000`
-
-Chunk database capacity in chunks. A chunk is 4096 bytes in size, so the total database capacity in kb can be estimated as `db-capacity * 4096`. The default 5,000,000 chunks is therefore approximately 20.5gb. We recommend a minimum of 2.5gb capacity for a node to be able to effectively function in the network. Light nodes that do not participate in storing may be able to specify less.
 
 *The below four options expose low-level configurations for [LevelDB](https://pkg.go.dev/github.com/syndtr/goleveldb@v1.0.0/leveldb/opt#Options) method [Openfile](https://pkg.go.dev/github.com/syndtr/goleveldb@v1.0.0/leveldb#OpenFile). Please let us know how you get on with tweaking these settings on your hardware in the `#swarm-infrastructure` channel on our [Discord server](https://discord.gg/wdghaQsGq5)*
 
@@ -366,7 +374,7 @@ The threshold in BZZ where you expect to get paid from your peers.
 
 #### --payment-tolerance
 
-*default* `50000000000000`
+*default* `10000000000000`
 
 The excess debt above payment threshold in BZZ where you disconnect from your peer.
 
@@ -375,12 +383,6 @@ The excess debt above payment threshold in BZZ where you disconnect from your pe
 *default* *automatically configured depending on network*
 
 The address of the postage stamp contract on the Ethereum blockchain, used for buying batches of stamps.
-
-#### --price-oracle-address
-
-*default* *automatically configured depending on network*
-
-The address of the price oracle on the Ethereum blockchain, used for determining the current price of storage.
 
 #### --resolver-options 
 
@@ -404,9 +406,9 @@ Set this flag if we would like the node not to try to connect to the network. Us
 
 #### --swap-endpoint           
 
-*default* `http://localhost:8545`
+*default* `ws://localhost:8546`
 
-SWAP ethereum blockchain endpoint.
+SWAP ethereum blockchain endpoint. Must be equipped with websockets.
 
 #### --swap-factory-address
 
@@ -414,7 +416,7 @@ SWAP ethereum blockchain endpoint.
 
 #### --swap-initial-deposit
 
-*default* `100000000000000000`
+*default* `10000000000000000`
 
 #### --tracing-enable
 
