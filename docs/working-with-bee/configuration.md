@@ -19,7 +19,7 @@ Bee runs as default in [Light Node](/docs/access-the-swarm/light-nodes) mode. To
 
 ### Swap Endpoint
 
-In order to access the blockchain, your Bee must be connected to an Ethereum blockchain node on the Goerli network. We recommend running your own [Geth Goerli Node](https://geth.ethereum.org/), but if you prefer, you may also sign up to [Infura's](https://infura.io) API service and set your `--swap-endpoint=https://goerli.infura.io/v3/your-api-key`
+In order to access the blockchain, your Bee must be connected to an Ethereum blockchain node on the Goerli network. We recommend running your own [Geth Goerli Node](https://geth.ethereum.org/), but if you prefer, you may also sign up to [Infura's](https://infura.io) API service and set your `wss://goerli.infura.io/ws/v3/your-api-key`
 
 ### NAT Address
 

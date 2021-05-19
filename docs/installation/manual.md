@@ -73,18 +73,16 @@ To participate in the swarm you must include configuration parameters specifying
 
 When running your Bee node with SWAP enabled for the first time, your Bee node will deploy a 'chequebook' contract using the canonical factory contract which is deployed by Swarm. A factory is used to ensure every node is using legitimate and verifiable chequebook contracts. Once the chequebook is deployed, Bee will deposit a certain amount of gBZZ (Goerli BZZ tokens) in the chequebook contract so that it can pay other nodes in return for their services.
 
-Once you have determined your Ethereum address, join our [Discord server](https://discord.gg/wdghaQsGq5) and navigate to the [#faucet](https://discord.gg/kfKvmZfVfe) channel. After you have [verified your username](https://discord.gg/tXGPdzZQaV) (and said hi! 👋), use our Faucet Bot to get your test tokens.
-
-To find out your Ethereum address, we can simply run our Bee node and point it at the Goerli rpc endpoint.
+To find out your Ethereum address, we can simply run our Bee node and point it at the Goerli RPC endpoint.
 
 ```bash
 bee start \
   --verbosity 5 \
-  --swap-endpoint https://rpc.slock.it/goerli \
+  --swap-endpoint wss://goerli.infura.io/ws/v3/your-api-key \
   --debug-api-enable
 ```
 
-Once you have determined your Ethereum address, join our [Discord server](https://discord.gg/wdghaQsGq5) and navigate to the [#faucet](https://discord.gg/kfKvmZfVfe) channel. After you have [verified your username](https://discord.gg/tXGPdzZQaV) (and said hi! 👋), use our Faucet Bot to get your test tokens.
+Once you have determined your Ethereum addresses, [fund your node](/docs/installation/fund-your-node)
 
 Now, we can run our Bee node and we will start to see Bee creating and waiting for transactions to complete. Please be patient as this might take a few moments.
 

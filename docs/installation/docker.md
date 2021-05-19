@@ -19,7 +19,7 @@ docker run\
   --rm -it ethersphere/bee:latest\
   start \
     --welcome-message="Bzzzz bzzz bzz bzz. 🐝" \
-    --swap-endpoint https://rpc.slock.it/goerli \
+    --swap-endpoint wss://goerli.infura.io/ws/v3/your-api-key \
     --debug-api-enable
 ```
 
@@ -38,7 +38,7 @@ docker run\
   --rm -it ethersphere/bee:latest\
   start \
     --welcome-message="Bzzzz bzzz bzz bzz. 🐝" \
-    --swap-endpoint https://rpc.slock.it/goerli \
+    --swap-endpoint wss://goerli.infura.io/ws/v3/your-api-key \
 	  --debug-api-enable
 ```
 
@@ -54,7 +54,7 @@ docker run\
   --rm -it ethersphere/bee:latest\
   start \
     --welcome-message="Bzzzz bzzz bzz bzz. 🐝" \
-    --swap-endpoint https://rpc.slock.it/goerli \
+    --swap-endpoint wss://goerli.infura.io/ws/v3/your-api-key \
 	  --debug-api-enable
 ```
 
@@ -105,7 +105,7 @@ There are some important configuration parameters which must be set in order for
 For Bee, amend the following parameters:
 
 ```
-BEE_SWAP_ENDPOINT=https://rpc.slock.it/goerli
+BEE_SWAP_ENDPOINT=wss://goerli.infura.io/ws/v3/your-api-key
 BEE_PASSWORD=my-password
 ```
 
@@ -137,8 +137,8 @@ docker-compose logs -f bee-1
 ```
 
 ```
-bee_1 | time="2020-12-15T18:43:14Z" level=warning msg="please make sure there is sufficient eth and bzz available on 7a977fa660e2e93e1eba40030c6b8da68d01971e"
-time="2020-12-15T18:43:14Z" level=warning msg="on goerli you can get both goerli eth and goerli bzz from https://faucet.ethswarm.org?address=7a977fa660e2e93e1eba40030c6b8da68d01971e"
+bee_1 | time="2020-12-15T18:43:14Z" level=warning msg="cannot continue until there is sufficient ETH (for Gas) and at least 1 BZZ available on 7a977fa660e2e93e1eba40030c6b8da68d01971e"
+time="2020-12-15T18:43:14Z" level=warning msg="learn how to fund your node by visiting our docs at https://docs.ethswarm.org/docs/installation/fund-your-node"
 ```
 
 

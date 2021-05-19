@@ -194,7 +194,7 @@ systemctl restart bee
 
 To restart the Bee process. You should see some activity in the logs as Bee shuts down and restarts.
 
-Now we need to specify some Bee configuration. In order to access the blockchain, your Bee needs to access an Ethereum blockchain node. We recommend running your own [Geth Goerli Node](https://geth.ethereum.org/), but for now let's take the easy way and sign up to [Infura](https://infura.io). Once you have created an account, go to your dashboard and make a new project (you can call it whatever you'd like to). Then select 'Goerli' from the project's 'endpoints' drop down menu in the 'settings' tab. You should now see a url appear which looks something like `https://goerli.infura.io/v3/0b85123456734ad6a247181cc535eabc`. Keep this open for later.
+Now we need to specify some Bee configuration. In order to access the blockchain, your Bee needs to access an Ethereum blockchain node. We recommend running your own [Geth Goerli Node](https://geth.ethereum.org/), but for now let's take the easy way and sign up to [Infura](https://infura.io). Once you have created an account, go to your dashboard and make a new project (you can call it whatever you'd like to). Then select 'Goerli' from the project's 'endpoints' drop down menu in the 'settings' tab. You should now see a url appear which looks something like `wss://goerli.infura.io/ws/v3/your-api-key`. Keep this open for later.
 
 Now we will configure your Bee node so it can access the blockchain, deploy your chequebook and start making transactions to cash out those gBZZ cheques from your peers! Type:
 
@@ -208,7 +208,7 @@ Hold down `ctrl` and press `w` to access the `where is?` functionality. Type `sw
 
 ```yaml
 ## swap ethereum blockchain endpoint (default "http://localhost:8545")
-swap-endpoint: https://goerli.infura.io/v3/0b85123456734ad6a247181cc535eabc.
+swap-endpoint: wss://goerli.infura.io/ws/v3/your-api-key
 ```
 
 To save and exit, hold `ctrl` and press `x`, then `y` and finally `enter` to agree to write the file. You can see the different commands that are available listed at the bottom of the screen, for example `^X Exit`.
@@ -235,7 +235,7 @@ curl localhost:1635/peers
 ```
 
 ```json
-{"peers":[{"address":"339cf2ca75f154ffb8dd13de024c4a5c5b53827b8fd21f24bec05835e0cdc2e8"},{"address":"b4e5df012cfc281e74bb517fcf87fc2c07cd787929c332fc805f8124401fabae"}, ... ]}
+{"peers":[{"address":"339cf2ca75f154ffb8dd13de024c4a5c5b53827b8fd21f24bec05835e0cdc2e8"},{"address":"b4e5df012cfc281e74bb517fcf87fc2c07cd787929c332fc805f8124401fabae"} ]}
 
 ```
 

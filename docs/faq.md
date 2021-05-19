@@ -37,14 +37,14 @@ The "context deadline exceeded" is a non critical warning. It means that a node 
 - If you use "bee start" 
     - you can set it in your bee configuration under --swap-endpoint or BEE_SWAP_ENDPOINT
     - open ~/.bee.yaml
-    - set `swap-endpoint: https://rpc.slock.it/goerli`
+    - set `swap-endpoint: wss://goerli.infura.io/ws/v3/your-api-key`
 
 
 - If you use bee.service
     - you can set it in your bee configuration under --swap-endpoint or BEE_SWAP_ENDPOINT
     - open /etc/bee/bee.yaml
     - and then uncomment `swap-endpoint` configuration
-    - and set it to `https://rpc.slock.it/goerli`
+    - and set it to `wss://goerli.infura.io/ws/v3/your-api-key`
     - after that sudo systemctl restart bee
 
 ### How to export private keys from the node with bee-clef installed

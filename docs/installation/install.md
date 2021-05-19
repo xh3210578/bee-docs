@@ -249,7 +249,7 @@ can interact with and deploy your chequebook contract. You can run your
 By default, Bee expects a local Goerli node at `http://localhost:8545`. To use a provider instead, change your configuration as follows.
 
 ```yaml
-swap-endpoint: https://goerli.infura.io/v3/<<your-api-key>>
+swap-endpoint: wss://goerli.infura.io/ws/v3/your-api-key
 ```
 
 If you would like to use your node to resolve ENS domain names, you must also provide the endpoint for an Ethereum mainnet provider.
