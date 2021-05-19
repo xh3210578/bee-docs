@@ -32,7 +32,7 @@ Your Bee should start up as normal, and begin to connect to other Bees that are 
 
 #### Manual Migration Procedure
 
-If you think you may have [pinned content]() on your node, automatic migration will be prevented and *you must* follow the Manual Migration Procedure detailed at the bottom of the page.
+If you think you may have [pinned content](/docs/access-the-network/pinning) on your node, automatic migration will be prevented and *you must* follow the Manual Migration Procedure detailed at the bottom of the page.
 
 To check if a 0.5.x has pinned content, query the `pin` api endpoint as follows:
 
