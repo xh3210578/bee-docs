@@ -13,4 +13,6 @@ Here you must **type** (not copy paste) the following, replacing the address wit
 /faucet sprinkle 0xabeeecdef123452a40f6ea9f598596ca8556bd57
 ```
 
-If you have problems, please let us know by making a post in the Faucet channel, we will do our best to provide tokens to everyone. Please be patient, we're keen for you to join the swarm too, and indeed you soon will! 🐝 🐝 🐝
+If you have problems, please let us know by making a post in the [#faucet](https://discord.gg/kfKvmZfVfe) channel, we will do our best to provide tokens to everyone. 
+
+Please be patient, we're keen for you to join the swarm too, and indeed you soon will! 🐝 🐝 🐝

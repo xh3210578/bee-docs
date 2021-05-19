@@ -25,7 +25,7 @@ To install Bee you will need to go through the following process.
  1. Set up the external signer for Bee, [Bee Clef](/docs/tooling/bee-clef). (Recommended) 
  2. Install Bee and set it up to run as a service.
  3. Configure Bee.
- 4. [fund your node](/docs/installation/quick-start#fund-your-node) with gETH and gBZZ
+ 4. [fund your node](/docs/installation/fund-your-node) with gETH and gBZZ
  5. Wait for your chequebook transactions to complete and batch store to update.
  6. Check Bee is working.
 
@@ -371,15 +371,7 @@ head -18 $(brew --prefix)/var/log/swarm-bee/bee.log | grep ethereum
 </TabItem>
 </Tabs>
 
-Once you have determined your Ethereum address, join our [Discord server](https://discord.gg/wdghaQsGq5) and navigate to the [#faucet](https://discord.gg/kfKvmZfVfe) channel. After you have [verified your username](https://discord.gg/tXGPdzZQaV) (and said hi! 👋), use our Faucet Bot to get your test tokens.
-
-Here you must **type** (not copy paste) the following, replacing the address with your own:
-
-```
-/faucet sprinkle 0xabeeecdef123452a40f6ea9f598596ca8556bd57
-```
-
-gBZZ and gETH will be then sent to your Ethereum address!
+Once you have determined your Ethereum address, [fund your node](/docs/installation/fund-your-node) with gETH and gBZZ
 
 :::info
 If too much time has elapsed, you may need to restart your node at this point (see above).

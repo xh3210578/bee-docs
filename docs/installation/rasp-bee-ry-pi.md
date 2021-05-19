@@ -93,14 +93,12 @@ Go back to the [https://docs.ethswarm.org](https://docs.ethswarm.org) and click 
 
 As before, right click and paste these into your terminal, `wget` will download the package file, you may then press enter to install the Bee package using `dpkg`.
 
-After download and installation are complete you will see output as follows:
+After download and installation are complete you will see output similar to the following:
 
 ```
 Please make sure there is sufficient ETH and BZZ available on the node's Ethereum address: 738853974f852a40f6ea9f598596ca8556bd578f.
 
-You can get both Goerli ETH and Goerli BZZ via the Bzzaar at https://bzz.ethswarm.org/?transaction=buy&amount=10&slippage=30&receiver=0x738853974f852a40f6ea9f598596ca8556bd578f
-
-Or you can join us on Discord (at https://discord.gg/ykCupZMuww) and ask our bot for a sprinkle in the #faucet-request channel.
+learn how to fund your node by visiting our docs at https://docs.ethswarm.org/docs/installation/fund-your-node
 
 Once the node's wallet has received the funds it will begin joining the Swarm network.
 ```
