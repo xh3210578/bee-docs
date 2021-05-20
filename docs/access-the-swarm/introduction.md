@@ -3,11 +3,11 @@ title: Introduction
 id: introduction
 ---
 
-Bee is not only a client you can use to earn gBZZ and form the network, it is also your entrypoint to the Swarm's unstoppable data storage and distribution system. Swarm is a distributed system designed to work with together with smart contracts to enable the development and infrastructure for full service applications running entirely on the decentralised web.
+As well as earning gBZZ and supporting the network, Bee it our entrypoint to Swarm's unstoppable data storage and distribution system. Swarm is a distributed system designed to work with together with smart contracts to enable the development and infrastructure for full service applications running entirely on the decentralised web.
 
-In this section we will describe all the different things you can do with Swarm.
+Here's just a few of the amazing things you can do with Bee!
 
-### Upload and Download Files
+### Decentralise Your Files
 
 Bee provides several convenient ways to [upload your data into the Swarm](/docs/access-the-swarm/upload-and-download). Once your data has been uploaded, it will be distributed, stored and retrievable by a worldwide network of p2p nodes, and made available from Swarm's [web gateway](https://gateway.ethswarm.org).
 

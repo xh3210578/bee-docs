@@ -6,7 +6,7 @@ id: install
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The swarm thrives on decentralisation, and Bee is designed so that it works at it's best when many individuals contribute to the health and distributed nature of the system by each running a Bee node. 
+The swarm thrives on decentralisation, and Bee is designed so that it works best when many individuals contribute to the health and distributed nature of the system by each running a Bee node. 
 
 It is easy to set up Bee on small and inexpensive computers, such as a [Raspberry Pi 4](/docs/installation/rasp-bee-ry-pi), spare hardware you have lying around, or even a cheap cloud hosted VPS (we recommend small, independent providers and colocations). 
 
@@ -229,7 +229,7 @@ Because Bee has many use cases and may run on many different specifications of h
 
 ### Important Configuration Parameters
 
-Please consider changing the following parameters. See below for more info on how to change your configuration and restart your Bee service.
+Bee is a versatile piece of software with diverse use cases. When you start Bee for the first time, please consider changing the following configuration parameters. Read on for more info on how to change the configuration of your software and restart your Bee service.
 
 #### Full Node or Light Node
 
@@ -246,13 +246,13 @@ can interact with and deploy your chequebook contract. You can run your
 [own Goerli node](https://github.com/goerli/testnet) or, use a provider instead - we recommend
 [Infura](https://infura.io/).
 
-By default, Bee expects a local Goerli node at `http://localhost:8545`. To use a provider instead, change your configuration as follows.
+By default, Bee expects a local Goerli node at `ws://localhost:8545`. To use an Ethereum RPC provider instead, change your configuration as follows. We recommend Infura.
 
 ```yaml
 swap-endpoint: wss://goerli.infura.io/ws/v3/your-api-key
 ```
 
-If you would like to use your node to resolve ENS domain names, you must also provide the endpoint for an Ethereum mainnet provider.
+If you would like to use your node to resolve ENS domain names, you must also provide the endpoint for an Ethereum mainnet RPC provider.
 
 ```yaml
 resolver-options: ["https://mainnet.infura.io/v3/<<your-api-key>>"]
@@ -260,7 +260,7 @@ resolver-options: ["https://mainnet.infura.io/v3/<<your-api-key>>"]
 
 #### Open File Descriptors
 
-Bee is designed to work on a lot of different hardware configurations. To facilitate the exploration of this, during our beeta phase, we have given node operators access to leveldb's `--db-open-files-limit`. This helps determine the speed with which Bee can read and write to its database, and therefore its efficiency in forwarding and serving chunks. Some say setting this to much more than the default 200 leads to a much enhanced ability to participate in the swarm and get those gBZZ! Share your experience in the #node-operators channel of our [Discord server](https://discord.gg/wdghaQsGq5) to help us make this process more automated in the future!
+Bee is designed to work on a lot of different hardware configurations. To facilitate the exploration of this, during our beeta phase, we have given node operators access to leveldb's `--db-open-files-limit`. This helps determine the speed with which Bee can read and write to its database, and therefore its efficiency in forwarding and serving chunks. Some say setting this to much more than the default 200 leads to a much enhanced ability to participate in the swarm and get those gBZZ! Share your experience in the #node-operators channel of our [Discord server](https://discord.gg/wdghaQsGq5) to help us make this process more automated in the future.
 
 ```yaml
 db-open-files-limit: 2000
@@ -401,7 +401,7 @@ Ethereum Swarm Bee
 
 Great! Our api is listening!
 
-Next, let's see if we have connected with any peers.
+Next, let's see if we have connected with any peers by querying our [debug api](/docs/working-with-bee/debug-api).
 
 :::info
 Here we are using the `jq` utility to parse our javascript. Use your package manager to install `jq`, or simply remove everything after and including the first `|` to view the raw json without it.
@@ -416,6 +416,6 @@ curl -s localhost:1635/peers | jq ".peers | length"
 6
 ```
 
-Perfect! We are accumulating peers, this means you are connected to the network, and ready to start accumulating cheques you can [cash to get your gBZZ](/docs/working-with-bee/cashing-out) and [using Bee](/docs/access-the-swarm/install) to [upload and download](/docs/access-the-swarm/upload-and-download) content or host and browse [websites](/docs/access-the-swarm/host-your-website) on the unstoppable swarm network.
+Perfect! We are accumulating peers, this means you are connected to the network, and ready to start [using Bee](/docs/access-the-swarm/install) to [upload and download](/docs/access-the-swarm/upload-and-download) content or host and browse [websites](/docs/access-the-swarm/host-your-website) hosted on the swarm network, and accumulating cheques which you can [cashout to get your gBZZ](/docs/working-with-bee/cashing-out).
 
 Welcome to the swarm! 🐝 🐝 🐝 🐝 🐝

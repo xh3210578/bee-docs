@@ -7,7 +7,7 @@ id: hive
 We recommend even our most 1337 readers go through a [single installation](/docs/installation/install) first to get a flavour of Bee, and to understand the nuances of the implementations. 👾
 :::
 
-Because of [how the swarm is structured](/), we recommend that users wishing to scale up their Bee operation, or set up a commercial Bee hive should seek to run many instances of Bee simulataneously, rather than extend the storage size of individual nodes.
+Because of how the swarm is structured, we recommend that users wishing to scale up their Bee operation, or set up a commercial Bee hive should seek to run many instances of Bee simulataneously. Read [The Book of Swarm](https://gateway.ethswarm.org/bzz/latest.bookofswarm.eth/) for more information on how the swarm comes together.
 
 Swarm provides tooling to help you install many Bees at once.
 
@@ -37,9 +37,6 @@ Make as many copies of bee-config-1.yaml as you want to run bee nodes. Increment
 
 Configure your nodes as desired, but ensure that the values `api-addr`, `data-dir`, `debug-api-addr`, `p2p-addr` and `clef-signer-endpoint` are unique for each configuration.
 
-# Why Run Multiple Nodes?
+### Monitoring
 
-To understand why this is the case, we must understand the level of pickiness (how picky a node is when deciding to store a chunk) of nodes with a large capacity versus a node with a small capacity.
-A node with a large capacity has a much lower pickiness than a node with a smaller capacity. Hence, the node will store chunks that would not have been stored by a more picky node.
-If your node has a much larger capacity than the average node in the network, it is likely to store chunks that belong together with chunks that were already deleted by other nodes.
-Since your node gets paid by serving chunks upon request and it is less likely that chunks are requested that belong to content that is mostly gone from Swarm, it is best to run a node whose pickiness is equal to the average pickiness of the network. Read [The Book of Swarm](https://gateway.ethswarm.org/bzz/latest.bookofswarm.eth/) for more info.
+See the monitoring section on how to access Bee's internal metrics! Share your community creations (like [swarmMonitor](https://github.com/doristeo/SwarmMonitoring) - thanks doristeo!) in the [#node-operators](https://discord.gg/X3ph5yGRFU) channel of our Discord server so we can add you to our list of all things that are [awesome](/docs/community/awesome-swarm) and Swarm. 🧡

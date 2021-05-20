@@ -127,7 +127,7 @@ docker-compose up -d
 ```
 
 :::warning
-Docker Compose will create a Docker Volume called `bee` containing important key material. Make sure to use to [backup](/docs/maintenance/backups) the contents of your Docker volume!
+Docker Compose will create a Docker Volume called `bee` containing important key material. Make sure to [backup](/docs/maintenance/backups) the contents of your Docker volume!
 :::
 
 To determine our address to fund, we can check the logs for our Bee container:

@@ -13,7 +13,7 @@ We provide a convenient [installation script](https://github.com/ethersphere/bee
 
 If your system is not supported, you might want to try to [build directly from source](/docs/installation/build-from-source).
 
-To install the binary using our quick install script, run either one of the following commands in your Terminal...
+To install the binary using our quick install script, run either one of the following commands in your Terminal:
 
 #### wget
 ```bash
@@ -82,13 +82,11 @@ bee start \
   --debug-api-enable
 ```
 
-Once you have determined your Ethereum addresses, [fund your node](/docs/installation/fund-your-node)
+The ensuing logs will include your Ethereum addresses, use this to [fund your node](/docs/installation/fund-your-node)
 
-Now, we can run our Bee node and we will start to see Bee creating and waiting for transactions to complete. Please be patient as this might take a few moments.
+Now, we can run our Bee node and we will start to see Bee creating and waiting for transactions to complete. Please be patient as this might take a while.
 
 Now our chequebook is deployed, and credited with an initial deposit of gBZZ ready to be given to reward our fellow busy Bee nodes for their services. You will also provide services, and be rewarded by your peers for services you provide for them.
-
-For more info on bandwidth accounting, see [SWAP Bandwidth Accounting](/docs/advanced/swap).
 
 ## Join the Swarm
 
@@ -101,7 +99,7 @@ INFO[2020-08-29T11:55:16Z] greeting <Hi I am a very buzzy bee bzzzz bzzz bzz. ðŸ
 Now your node will begin to request chunks of data that fall within your *radius of responsibilty* - data that you will then serve to other p2p clients running in the swarm. Your node will then begin to respond to requests for these chunks from other peers, for which you will soon be rewarded in BZZ.
 
 :::tip Incentivisation
-In Swarm, storing chunks of data, serving and forwarding them to other nodes earns you rewards! Read about incentives in [SWAP](/docs/advanced/swap) for more info.
+In Swarm, storing chunks of data, serving and forwarding them to other nodes earns you rewards! Follow this guide to learn how to regularly [cashout](/docs/using-bee/cashout) cheques other nodes send you in return for your services, so that you can get your gBZZ!
 :::
 
 Your Bee client has now generated an elliptic curve keypair similar to an Ethereum wallet. These are stored in your [data directory](/docs/working-with-bee/configuration#--data-dir), in the `keys` folder.

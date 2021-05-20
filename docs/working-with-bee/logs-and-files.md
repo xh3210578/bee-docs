@@ -5,7 +5,7 @@ id: logs-and-files
 
 ### Linux
 
-We can now manage the Bee service using `systemctl`.
+If you have installed Bee on Linux using a package manager you will now be able to the manage your Bee service using `systemctl`.
 
 ```bash
 systemctl status bee

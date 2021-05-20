@@ -18,22 +18,6 @@ As part of these changes, if you have any **locally pinned content**, this must 
 
 If you *do not* have any locally pinned content, your migration will be automatic and your update will proceed as normal.
 
-#### Automatic Migration Procedure
-
-To update **without pinned content:**
-
-1. [Cashout your node](/docs/working-with-bee/cashing-out) to make sure your gBZZs are safe. If you have cashed out recently, you can skip this step.
-2. [Backup your Bee](/docs/working-with-bee/backups) data, especially your keys folder!
-3. Upgrade your node, as you normally would (see below).
-4. Adjust your configuration. Several configuration methods have changed in 0.6.x - check out the [configuration](/docs/working-with-bee/configuration) guide for more info on how to update your configuration.
-5. Restart your node.
-
-Your Bee should start up as normal, and begin to connect to other Bees that are running Bee 0.6.0 or later.
-
-#### Manual Migration Procedure
-
-If you think you may have [pinned content](/docs/access-the-network/pinning) on your node, automatic migration will be prevented and *you must* follow the Manual Migration Procedure detailed at the bottom of the page.
-
 To check if a 0.5.x has pinned content, query the `pin` api endpoint as follows:
 
 ```bash
@@ -44,21 +28,35 @@ curl -s localhost:1633/pin/chunks | jq ".chunks | length"
 100
 ```
 
-If any non-zero values are returned, **you must** complete the following steps.
+If any non-zero values are returned, **you must** complete the manual migration procedure, automatic migration will be prevented and *you must* follow the Manual Migration Procedure detailed further down the page.
+
+#### Automatic Migration Procedure
+
+To update **without pinned content:**
+
+1. Optionally, [cashout your node's cheques](/docs/working-with-bee/cashing-out) to make sure your gBZZs are safe. If you have cashed out recently, you can skip this step.
+2. [Backup your Bee](/docs/working-with-bee/backups) data, especially your keys folder!
+3. Upgrade your node, as you normally would (see below).
+4. Adjust your configuration. Several configuration parameters have changed in 0.6.x - If you wish to continue running as a full node, you must set the new `full-node` flag to `true`. check out the [configuration](/docs/working-with-bee/configuration) guide for more info on how to update your configuration.
+5. Restart your node.
+
+Your Bee should start up as normal, and begin to connect to other Bees that are running Bee 0.6.0 or later.
+
+#### Manual Migration Procedure
 
 1. [Cashout your node](/docs/working-with-bee/cashing-out) to make sure your gBZZs are safe. If you have cashed out recently, you can skip this step.
 2. [Backup your Bee](/docs/working-with-bee/backups) data, especially your keys folder!
-2b. If you have pinned data, Download all your pinned data. For security reasons, Bee does not provide a list of the data that has been pinned. Since Bee does not provide directory manifest listing, you should have external references to these. Please use these to download all your data ready for re-upload with [postage stamps](/docs/working-with-bee/keep-your-data-alive).
-4. Carefully, delete your `localstorage` folder **only**. *DO NOT DELETE* your `keys` or `statestore` folder.
+3. If you have pinned data, Download all your pinned data. Please use these to download all your data ready for re-upload with [postage stamps](/docs/working-with-bee/keep-your-data-alive).
+4. Carefully, delete your `localstorage` folder **only**. *DO NOT DELETE* your `keys` or `statestore` folder. Your `localstorage` folder can be located by consulting your Bee's `data-dir` configuration parameter.
 5. Upgrade your node, as you normally would (see below).
-6. Adjust your configuration. Several configuration methods have changed in 0.6.x - check out the [configuration](/docs/working-with-bee/configuration) guide to update your configuration.
+6. Adjust your configuration. Several configuration parameters have changed in 0.6.x - If you wish to continue running as a full node, you must set the new `full-node` flag to `true`. check out the [configuration](/docs/working-with-bee/configuration) guide for more info on how to update your configuration.
 7. Restart your node.
 
 Your Bee should start up as normal, and begin to connect to other Bees that are running Bee 0.6.0 or later.
 
-* *For a brute force approach, simply download and reupload all chunks returned by the `pins` endpoint.*
+## Upgrade Procedure
 
-#### Ubuntu / Debian / Raspbian
+### Ubuntu / Debian / Raspbian
 
 To upgrade Bee, simply stop the Bee service.
 

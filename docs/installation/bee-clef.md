@@ -100,7 +100,7 @@ brew services start swarm-clef
 ### Configuring Bee-clef
 Configuration files are stored in `/etc/bee-clef/`
 
-Under a normal/default package install, there wont be any configuration changes necessary to start using bee-clef.
+For a normal installation using a package manger, there should not be any configuration changes necessary to start using Bee Clef.
 
 ### Interact With Clef
 

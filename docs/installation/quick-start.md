@@ -10,7 +10,7 @@ Bee is a versatile piece of software that caters for a diverse array of use case
 
 ### Access the Network
 
-If you want to interact with the Bee ecosystem in a decentralised way, but not earn gBZZ by storing or forwarding chunks, simply run Bee in the background in [light node](/docs/access-the-swarm/light-node) on your laptop or desktop computer for direct access to the swarm.
+If you want to interact with the Bee ecosystem in a decentralised way, but not earn gBZZ by storing or forwarding chunks, simply run Bee in the background in [light node](/docs/access-the-swarm/light-nodes) mode on your laptop or desktop computer for direct access to the swarm for your web browser and other applications.
 
 [Install Bee](/docs/installation/install)
 
@@ -22,6 +22,6 @@ Earn [gBZZ](/docs/working-with-bee/cashing-out) and help keep the swarm strong b
 
 ### Run Your Own Hive of Nodes
 
-Take it to the next level by running a whole hive of Bees. We provide tooling and monitoring for to help you manage large deployments of many Bee nodes.
+Take it to the next level by keeping a whole hive of Bees. We provide tooling and monitoring to help you manage large deployments of many Bee nodes.
 
 [Bee Hives](/docs/installation/hive)

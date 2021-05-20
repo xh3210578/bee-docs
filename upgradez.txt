@@ -1,20 +1,21 @@
 tasks remaining
 ---------------
 
-change getting-started to installation
 upload change api
-dry up funding
+
 finish FAQ
 fix FAQs
+
+reupload
+
+add figures for postage stamps
+
+
+.....
 
 once hash is fixed
 
 update from 0.5.* to 0.6.*
-
-fix store size
-check openapi specs again
-check config again
-
 
 ...
 

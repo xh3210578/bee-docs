@@ -8,9 +8,9 @@ Hello and welcome to the swarm! We are very happy to have you here with us! 🐝
 
 As soon as your Bee client is up and running you will begin to connect with peers all over the world to become a part of Swarm, a global p2p network tasked with storing and distributing all of the world's data.
 
-Swarm is a decentralised data storage and distribution technology, ready to power the next generation of censorship resistant unstoppable serverless apps. It is the complement to blockchain based smart contracts originally envisaged by the Ethereum cryptocurrency and provides the mass storage piece in the Dapp building puzzle. Swarm is economically self-sustaining due to a built-in incentive system enforced through smart contracts on the Ethereum blockchain.
+Swarm is a decentralised data storage and distribution technology, ready to power the next generation of censorship resistant, unstoppable serverless apps. It is the complement to blockchain based smart contracts originally envisaged by the Ethereum cryptocurrency and provides the mass storage piece in the Dapp building puzzle. 
 
-Swarm aspires to shape the future towards a self-sovereign global society and permissionless open markets. On Swarm, applications can run autonomously yet securely in a planetary-scale deployment and execution environment.
+Swarm is economically self-sustaining due to a built-in incentive system enforced through smart contracts on the Ethereum blockchain. Swarm aspires to shape the future towards a self-sovereign global society and permissionless open markets. On Swarm, applications can run autonomously yet securely in a planetary-scale deployment and execution environment.
 
 ## Installation
 Don't have Bee installed yet? It's easy! Head over to the [installation](/docs/installation/quick-start) section to get Bee up and running.
