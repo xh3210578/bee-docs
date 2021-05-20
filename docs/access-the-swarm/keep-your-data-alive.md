@@ -46,7 +46,7 @@ When you purchase a batch of stamps, you agree to burn gBZZ. Although your 'bala
 :::
 
 ```bash
-curl -s -XPOST http://localhost:1633/stamps/1/20
+curl -s -XPOST http://localhost:1633/stamps/100/20
 ```
 
 :::info
