@@ -9,6 +9,7 @@ module.exports = {
         'installation/install',
         'installation/manual',
         'installation/build-from-source',
+        'installation/rasp-bee-ry-pi',
         'installation/hive',
         'installation/docker',
         'installation/bee-clef',

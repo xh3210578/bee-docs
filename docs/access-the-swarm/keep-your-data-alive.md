@@ -39,7 +39,7 @@ Right now, the easiest way to start uploading content, is to buy a large enough 
 
 The *amount* you specify will determine the amount of time your chunks live in the swarm. Because pricing is variable, it is not possible to predict with accuracy exactly when your chunks will run out of balance, however, it can be estimated based on the *current price* and the *remaining batch balance*.
 
-For now, we suggest you specify depth X and amount Y for your batches. This should be ample to upload up to Z mb of data, and to keep your files in the Swarm for the forseeable future.
+For now, we suggest you specify depth 20 and amount 100 for your batches. This should be ample to upload up quite some data, and to keep your files in the Swarm for the forseeable future.
 
 :::warning
 When you purchase a batch of stamps, you agree to burn gBZZ. Although your 'balance' slowly decrements as time goes on, there is no way to withdraw gBZZ from a batch. This is an outcome of Swarm's decentralised design, to read more about how the swarm fits together, read [The Book of Swarm](https://gateway.ethswarm.org/bzz/latest.bookofswarm.eth/).
@@ -59,8 +59,10 @@ Look out for more ways to more accurately estimate the correct size of your batc
 
 In order to make sure your *batch* has sufficient *remaining balance* to be stored and served by nodes in its *neighbourhood of responsibility*, you must regularly check on its *balance* and act accordingly. 
 
-`tbc CHECK BATCH BALANCE`
+```bash
+curl localhost:1635/chainstate
+```
 
-`tbc CALCULATE REMAINING BALANCE`
+Shows the current price per chunk per block in GPLUR, the smallest unit of GBZZ
 
 Soon, functionality will be added to *top up* your batches balance. For now, you must reupload content with a newly created *stamp batch id*.

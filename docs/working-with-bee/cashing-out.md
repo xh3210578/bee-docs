@@ -6,11 +6,11 @@ id: cashing-out
 As your Bee forwards and serves chunks to it's peers, it is rewarded in gBZZ in the form of cheques. Once these cheques accumulate sufficient value, you may *cash them out* using Bee's API. This process transfers money from your peer's chequebooks into your own, which you can then withdrawal to your wallet to do with as you please!
 
 :::important
-Do not cash out your cheques too regularly! Once a week is more than sufficient and prevents unneccesary relieves congestion on the blockchain.
+PLEASE! Do not cash out your cheques too regularly! Once a week is more than sufficient! This prevents and relieves unneccesary congestion on the blockchain. 💩
 :::
 
 :::info
-Learn more about how SWAP and the other accounting protocols work by reading
+Learn more about how SWAP and other accounting protocols work by reading
 [The Book of Swarm](https://gateway.ethswarm.org/bzz/latest.bookofswarm.eth/).
 :::
 

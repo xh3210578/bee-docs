@@ -3,8 +3,6 @@ title: Rasp-bee-ry Pi
 id: rasp-bee-ry-pi
 ---
 
-# Rasp-bee-ry Pi
-
 You will need:
 
 - Raspberry Pi 4
